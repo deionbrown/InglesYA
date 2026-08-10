@@ -1,0 +1,190 @@
+{
+  "units": [
+    "Introductions",
+    "Personal Information",
+    "Countries & Nationalities",
+    "Family",
+    "Numbers & Age",
+    "Daily Routine",
+    "Time",
+    "Days & Dates",
+    "Home",
+    "Food & Drinks",
+    "At a Restaurant",
+    "Shopping",
+    "Clothes",
+    "Likes & Dislikes",
+    "Hobbies",
+    "Work",
+    "School",
+    "Places in Town",
+    "Directions",
+    "Transportation",
+    "Weather",
+    "Body",
+    "Health",
+    "Describing People",
+    "Present Continuous",
+    "Past Events",
+    "Future Plans",
+    "Invitations",
+    "Travel",
+    "Final A1 Review"
+  ],
+  "slides": [
+    {
+      "type": "warmup",
+      "title": "Warm-up",
+      "image": "hello_real.jpg",
+      "headline": "Hello!",
+      "ipa": "/həˈloʊ/",
+      "note": "Greet the student naturally, wave, and have them repeat Hello and Hi."
+    },
+    {
+      "type": "vocab",
+      "title": "Key Vocabulary",
+      "image": "hello_real.jpg",
+      "items": [
+        [
+          "hello",
+          "/həˈloʊ/",
+          "hola"
+        ],
+        [
+          "hi",
+          "/haɪ/",
+          "hola"
+        ],
+        [
+          "name",
+          "/neɪm/",
+          "nombre"
+        ],
+        [
+          "my",
+          "/maɪ/",
+          "mi"
+        ],
+        [
+          "your",
+          "/jʊr/",
+          "tu / su"
+        ],
+        [
+          "nice",
+          "/naɪs/",
+          "agradable"
+        ],
+        [
+          "meet",
+          "/miːt/",
+          "conocer"
+        ],
+        [
+          "you",
+          "/juː/",
+          "tú / usted"
+        ]
+      ]
+    },
+    {
+      "type": "sentences",
+      "title": "Key Sentences",
+      "image": "sentences_real.jpg",
+      "items": [
+        [
+          "My name is Anna.",
+          "Me llamo Anna."
+        ],
+        [
+          "What’s your name?",
+          "¿Cómo te llamas?"
+        ],
+        [
+          "I’m Daniel.",
+          "Soy Daniel."
+        ],
+        [
+          "Nice to meet you.",
+          "Mucho gusto."
+        ],
+        [
+          "Nice to meet you, too.",
+          "Mucho gusto también."
+        ]
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Mini Dialogue",
+      "image": "dialogue_real.jpg",
+      "lines": [
+        [
+          "A",
+          "Hello! My name is Anna."
+        ],
+        [
+          "B",
+          "Hi! I’m Leo."
+        ],
+        [
+          "A",
+          "Nice to meet you, Leo."
+        ],
+        [
+          "B",
+          "Nice to meet you, too."
+        ]
+      ]
+    },
+    {
+      "type": "listening",
+      "title": "Listening",
+      "image": "listening_real.jpg",
+      "audio": "Hello! My name is Emma. Nice to meet you.",
+      "question": "What is the girl’s name?",
+      "options": [
+        "Anna",
+        "Emma",
+        "Laura"
+      ],
+      "answer": "Emma"
+    },
+    {
+      "type": "speaking",
+      "title": "Speaking Practice",
+      "image": "speaking_real.jpg",
+      "questions": [
+        "What’s your name?",
+        "Can you say: My name is ___?",
+        "How do you greet someone in the morning?",
+        "What do you say after someone introduces themselves?",
+        "Introduce yourself in two sentences."
+      ]
+    },
+    {
+      "type": "quiz",
+      "title": "Quick Practice",
+      "image": "practice_real.jpg",
+      "question": "A: Hello! My name is Sofia.\nB: __________",
+      "options": [
+        "Nice to meet you.",
+        "I am ten years old.",
+        "It is Monday."
+      ],
+      "answer": "Nice to meet you."
+    },
+    {
+      "type": "review",
+      "title": "Lesson Review",
+      "image": "review_real.jpg",
+      "items": [
+        "I can say Hello / Hi.",
+        "I can say my name.",
+        "I can ask: What’s your name?",
+        "I can say: Nice to meet you.",
+        "I can do a short introduction dialogue."
+      ]
+    }
+  ]
+}
