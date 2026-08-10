@@ -7,6 +7,21 @@ import edge_tts
 BASE=Path(__file__).resolve().parent
 ASSETS=BASE/"assets"
 
+def resolve_image(filename):
+    """
+    Find lesson images whether they are stored:
+    1) inside assets/
+    2) directly beside app.py in the GitHub repository
+    """
+    candidates = [
+        ASSETS / filename,
+        BASE / filename,
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return None
+
 st.set_page_config(
     page_title="Inglés ¡YA! · English A1 Teacher Studio",
     page_icon="💬",
@@ -241,7 +256,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · Web Edition v5</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v6</div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -270,8 +285,11 @@ st.markdown(f"""<div class="hero"><h1>Unit 1 · Introductions</h1><p>Lesson 1 ·
 st.markdown('<div class="lesson-card">',unsafe_allow_html=True)
 st.markdown(f'<div class="title">{s["title"]}</div>',unsafe_allow_html=True)
 
-img=ASSETS/s["image"]
-if img.exists(): st.image(str(img),use_container_width=True)
+img=resolve_image(s["image"])
+if img is not None:
+    st.image(str(img), use_container_width=True)
+else:
+    st.warning(f"Lesson image not found: {s['image']}")
 
 t=s["type"]
 if t=="warmup":
