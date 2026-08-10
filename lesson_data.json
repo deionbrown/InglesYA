@@ -35,10 +35,17 @@
     {
       "type": "warmup",
       "title": "Warm-up",
-      "image": "hello_real.jpg",
+      "image": "unit1_warmup_greeting.jpg",
       "headline": "Hello!",
       "ipa": "/həˈloʊ/",
-      "note": "Greet the student naturally, wave, and have them repeat Hello and Hi."
+      "note": "Use the picture first. Ask the questions, then model “Hello!”, “Hi!”, and “I’m …” with your student.",
+      "questions": [
+        "Who are these people?",
+        "Where do you think they are?",
+        "What are they doing?",
+        "What do you say when you meet someone?"
+      ],
+      "goal": "Start a simple conversation and introduce yourself in English."
     },
     {
       "type": "vocab",
