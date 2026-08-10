@@ -4,10 +4,16 @@ from pathlib import Path
 import streamlit as st
 import edge_tts
 
-st.set_page_config(page_title="English A1 Teacher Studio",page_icon="🇬🇧",layout="wide",initial_sidebar_state="expanded")
-
 BASE=Path(__file__).resolve().parent
 ASSETS=BASE/"assets"
+LOGO=ASSETS/"ingles_ya_logo.jpg"
+
+st.set_page_config(
+    page_title="Inglés ¡YA! · English A1 Teacher Studio",
+    page_icon=str(LOGO),
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 DATA=json.loads((BASE/"lesson_data.json").read_text(encoding="utf-8"))
 UNITS=DATA["units"]; SLIDES=DATA["slides"]
 
@@ -30,7 +36,7 @@ st.markdown(f"""
 
 .block-container{{
     max-width:1250px;
-    padding-top:1.2rem;
+    padding-top:1.5rem;
     padding-bottom:3rem;
 }}
 
@@ -41,6 +47,24 @@ st.markdown(f"""
 }}
 [data-testid="stSidebar"] *{{
     color:{C['text']};
+}}
+
+/* Streamlit top header / toolbar */
+[data-testid="stHeader"]{{
+    background:{C['surface']} !important;
+    border-bottom:1px solid {C['border']} !important;
+}}
+[data-testid="stHeader"]::before{{
+    background:{C['surface']} !important;
+}}
+[data-testid="stToolbar"]{{
+    background:transparent !important;
+}}
+[data-testid="stDecoration"]{{
+    background:{C['accent']} !important;
+}}
+header[data-testid="stHeader"]{{
+    box-shadow:none !important;
 }}
 
 .hero{{
@@ -138,6 +162,33 @@ div.stButton>button{{
     border:1px solid {C['border']};
     box-shadow:{inner_shadow};
 }}
+
+/* Keep top-right controls readable in both themes */
+[data-testid="stHeader"] button,
+[data-testid="stHeader"] svg{{
+    color:{C['text']} !important;
+    fill:{C['text']} !important;
+}}
+
+/* Sidebar brand card */
+.brand-wrap{{
+    background:{C['surface']};
+    border:1px solid {C['border']};
+    border-radius:18px;
+    padding:12px;
+    margin-bottom:12px;
+    box-shadow:{inner_shadow};
+}}
+.brand-name{{
+    font-size:1.05rem;
+    font-weight:800;
+    color:{C['text']};
+    margin-top:6px;
+}}
+.brand-sub{{
+    font-size:.78rem;
+    color:{C['muted']};
+}}
 </style>
 """,unsafe_allow_html=True)
 
@@ -157,8 +208,16 @@ def play(text,key,label="🔊 Listen"):
         try: st.audio(make_audio(text),format="audio/mp3",autoplay=True)
         except Exception: st.warning("Audio unavailable right now.")
 
-st.sidebar.markdown("## 🇬🇧 English A1")
-st.sidebar.caption("Teacher Studio · Web Edition v2")
+st.sidebar.image(str(LOGO), use_container_width=True)
+st.sidebar.markdown(
+    f"""
+    <div class="brand-wrap">
+      <div class="brand-name">Inglés ¡YA!</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v3</div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 st.sidebar.markdown("### Appearance")
 theme=st.sidebar.radio("Theme",["Light","Dark"],horizontal=True,label_visibility="collapsed",index=0 if st.session_state.theme=="Light" else 1)
 if theme!=st.session_state.theme:
@@ -247,4 +306,3 @@ with c3:
     else:
         if st.button("Finish lesson ✓",type="primary"):
             st.success("Unit 1 completed!"); st.balloons()
-
