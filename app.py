@@ -135,6 +135,25 @@ header[data-testid="stHeader"]{{
     box-shadow:{inner_shadow};
 }}
 
+.warmup-question {{
+    background:{C['surface']};
+    border:1px solid {C['border']};
+    border-radius:16px;
+    padding:14px 16px;
+    min-height:78px;
+    box-shadow:{inner_shadow};
+    color:{C['text']};
+    font-weight:700;
+}}
+.goal-card {{
+    background:{C['surface']};
+    border:1px solid {C['accent']};
+    border-radius:16px;
+    padding:16px;
+    box-shadow:{inner_shadow};
+    color:{C['text']};
+}}
+
 .progress{{
     background:{C['alt']};
     border:1px solid {C['border']};
@@ -222,7 +241,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · Web Edition v4</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v5</div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -256,9 +275,30 @@ if img.exists(): st.image(str(img),use_container_width=True)
 
 t=s["type"]
 if t=="warmup":
-    st.markdown(f'<div class="big">{s["headline"]}</div><div class="ipa">{s["ipa"]}</div>',unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="big">{s["headline"]}</div><div class="ipa">{s["ipa"]}</div>',
+        unsafe_allow_html=True
+    )
     play(s["headline"],"warm")
-    st.markdown(f'<div class="tip">💡 <b>Teacher note:</b> {s["note"]}</div>',unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="tip">💡 <b>Teacher note:</b> {s["note"]}</div>',
+        unsafe_allow_html=True
+    )
+
+    st.markdown("### 💬 Let’s think!")
+    qcols = st.columns(2)
+    for qi, question in enumerate(s.get("questions", [])):
+        with qcols[qi % 2]:
+            st.markdown(
+                f'<div class="warmup-question">{qi+1}. {question}</div>',
+                unsafe_allow_html=True
+            )
+
+    if s.get("goal"):
+        st.markdown(
+            f'<div class="goal-card"><b>🎯 Lesson goal</b><br>{s["goal"]}</div>',
+            unsafe_allow_html=True
+        )
 
 elif t=="vocab":
     for i,(w,ipa,es) in enumerate(s["items"]):
