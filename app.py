@@ -1,8 +1,9 @@
 
-import json, hashlib, tempfile, asyncio
+import json, hashlib, tempfile, asyncio, re
 from pathlib import Path
 import streamlit as st
 import edge_tts
+from supabase import create_client
 
 BASE=Path(__file__).resolve().parent
 ASSETS=BASE/"assets"
@@ -28,6 +29,50 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# ============================================================
+# SUPABASE USERNAME + PASSWORD AUTH
+# ============================================================
+
+AUTH_DOMAIN = "auth.inglesya.local"
+
+def normalize_username(value: str) -> str:
+    """Keep usernames predictable and safe for the internal Supabase identity."""
+    value = (value or "").strip().lower()
+    value = re.sub(r"[^a-z0-9._-]", "", value)
+    return value[:32]
+
+def username_to_internal_email(username: str) -> str:
+    # Supabase Auth password login officially uses email or phone.
+    # The learner sees only a username. The internal email is never shown.
+    return f"{normalize_username(username)}@{AUTH_DOMAIN}"
+
+def get_supabase():
+    """
+    Public app client. Use ONLY the project's publishable/anon key here.
+    Never put a service_role/secret key in the Streamlit app.
+    """
+    try:
+        url = st.secrets["SUPABASE_URL"]
+        key = st.secrets["SUPABASE_KEY"]
+    except Exception:
+        return None
+
+    if not url or not key:
+        return None
+    return create_client(url, key)
+
+supabase = get_supabase()
+
+if "auth_user_id" not in st.session_state:
+    st.session_state.auth_user_id = None
+if "auth_username" not in st.session_state:
+    st.session_state.auth_username = ""
+if "auth_access_token" not in st.session_state:
+    st.session_state.auth_access_token = None
+if "auth_refresh_token" not in st.session_state:
+    st.session_state.auth_refresh_token = None
+
 DATA=json.loads((BASE/"lesson_data.json").read_text(encoding="utf-8"))
 UNITS=DATA["units"]; SLIDES=DATA["slides"]
 
@@ -224,6 +269,56 @@ div.stButton>button{{
     font-size:.78rem;
     color:{C['muted']};
 }}
+
+.auth-logo-wrap {
+    text-align:center;
+    margin:6px 0 18px 0;
+}
+.auth-panel {
+    background:white;
+    border:1px solid #D9E0EA;
+    border-radius:26px;
+    padding:30px;
+    box-shadow:0 16px 42px rgba(20,31,50,.10);
+}
+.auth-title {
+    font-size:2rem;
+    font-weight:900;
+    color:#10213E;
+    margin-bottom:4px;
+}
+.auth-subtitle {
+    color:#68758A;
+    margin-bottom:18px;
+}
+.auth-feature {
+    background:#F4F7FB;
+    border:1px solid #DCE3ED;
+    border-radius:14px;
+    padding:11px 13px;
+    margin:8px 0;
+    color:#21314D;
+    font-weight:650;
+}
+.auth-brand-panel {
+    background:linear-gradient(145deg,#0D2E6B,#164995);
+    border-radius:28px;
+    padding:34px;
+    color:white;
+    min-height:520px;
+    box-shadow:0 18px 45px rgba(11,36,80,.16);
+}
+.auth-brand-panel h1 {
+    color:white;
+    line-height:1.07;
+    font-size:2.4rem;
+}
+.auth-brand-panel p {
+    color:#E4EDFF;
+    font-size:1.05rem;
+    line-height:1.55;
+}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -243,6 +338,228 @@ def play(text,key,label="🔊 Listen"):
         try: st.audio(make_audio(text),format="audio/mp3",autoplay=True)
         except Exception: st.warning("Audio unavailable right now.")
 
+
+# ============================================================
+# LOGIN SCREEN
+# ============================================================
+
+def save_login_session(response, username):
+    if not response or not response.user or not response.session:
+        return False
+
+    st.session_state.auth_user_id = response.user.id
+    st.session_state.auth_username = normalize_username(username)
+    st.session_state.auth_access_token = response.session.access_token
+    st.session_state.auth_refresh_token = response.session.refresh_token
+    return True
+
+def login_with_username(username, password):
+    clean = normalize_username(username)
+    if not clean:
+        raise ValueError("Escribe un usuario válido.")
+    if not password:
+        raise ValueError("Escribe tu contraseña.")
+
+    internal_email = username_to_internal_email(clean)
+    response = supabase.auth.sign_in_with_password({
+        "email": internal_email,
+        "password": password,
+    })
+    return save_login_session(response, clean)
+
+def signup_with_username(username, password):
+    clean = normalize_username(username)
+    if len(clean) < 3:
+        raise ValueError("El usuario debe tener al menos 3 caracteres.")
+    if len(password) < 6:
+        raise ValueError("La contraseña debe tener al menos 6 caracteres.")
+
+    internal_email = username_to_internal_email(clean)
+
+    response = supabase.auth.sign_up({
+        "email": internal_email,
+        "password": password,
+        "options": {
+            "data": {
+                "username": clean,
+                "brand": "InglesYA",
+            }
+        },
+    })
+
+    # If Confirm Email is OFF, Supabase returns a session immediately.
+    if response.session:
+        save_login_session(response, clean)
+        return "logged_in"
+
+    # With confirmation ON, the synthetic address cannot receive email.
+    return "needs_confirmation"
+
+def render_login():
+    # No course/sidebar content before authentication.
+    st.markdown(
+        """
+        <style>
+        [data-testid="stSidebar"] {display:none;}
+        .block-container {
+            max-width:1020px;
+            padding-top:2rem;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    left, right = st.columns([1.05, .95], gap="large")
+
+    with left:
+        logo_html = ""
+        if "LOGO_B64" in globals():
+            logo_html = (
+                f'<div class="auth-logo-wrap">'
+                f'<img src="data:image/jpeg;base64,{LOGO_B64}" '
+                f'style="width:185px;max-width:70%;border-radius:50%;background:white;padding:7px;">'
+                f'</div>'
+            )
+
+        st.markdown(
+            f"""
+            <div class="auth-brand-panel">
+                {logo_html}
+                <h1>Bienvenido a<br>Inglés ¡YA!</h1>
+                <p>Ingresa a tu espacio personal de aprendizaje y continúa tus clases.</p>
+                <div class="auth-feature">✓ Clases visuales A1</div>
+                <div class="auth-feature">✓ Audio natural</div>
+                <div class="auth-feature">✓ Actividades interactivas</div>
+                <div class="auth-feature">✓ Progreso por usuario</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with right:
+        st.markdown('<div class="auth-panel">', unsafe_allow_html=True)
+        st.markdown('<div class="auth-title">Iniciar sesión</div>', unsafe_allow_html=True)
+        st.markdown(
+            '<div class="auth-subtitle">Usa tu usuario y contraseña de Inglés ¡YA!</div>',
+            unsafe_allow_html=True
+        )
+
+        username = st.text_input(
+            "Usuario",
+            placeholder="Ejemplo: maria01",
+            key="auth_login_username"
+        )
+        password = st.text_input(
+            "Contraseña",
+            type="password",
+            placeholder="••••••••",
+            key="auth_login_password"
+        )
+
+        if supabase is None:
+            st.error(
+                "Falta configurar Supabase. Debes agregar SUPABASE_URL "
+                "y SUPABASE_KEY en Streamlit Secrets."
+            )
+        else:
+            if st.button(
+                "Entrar →",
+                type="primary",
+                use_container_width=True,
+                key="auth_login_btn"
+            ):
+                try:
+                    if login_with_username(username, password):
+                        st.rerun()
+                    else:
+                        st.error("No se pudo iniciar sesión.")
+                except Exception:
+                    st.error("Usuario o contraseña incorrectos.")
+
+        with st.expander("Crear una cuenta"):
+            st.caption(
+                "Puedes permitir que tus alumnos creen su usuario directamente."
+            )
+
+            new_username = st.text_input(
+                "Nuevo usuario",
+                placeholder="Ejemplo: pedro15",
+                key="auth_signup_username"
+            )
+            new_password = st.text_input(
+                "Nueva contraseña",
+                type="password",
+                placeholder="Mínimo 6 caracteres",
+                key="auth_signup_password"
+            )
+            confirm_password = st.text_input(
+                "Repite la contraseña",
+                type="password",
+                key="auth_signup_confirm"
+            )
+
+            if st.button(
+                "Crear cuenta",
+                use_container_width=True,
+                key="auth_signup_btn"
+            ):
+                if supabase is None:
+                    st.error("Supabase no está configurado.")
+                elif new_password != confirm_password:
+                    st.warning("Las contraseñas no coinciden.")
+                else:
+                    try:
+                        result = signup_with_username(
+                            new_username,
+                            new_password
+                        )
+
+                        if result == "logged_in":
+                            st.success("Cuenta creada.")
+                            st.rerun()
+                        else:
+                            st.error(
+                                "La cuenta fue creada pero Supabase está pidiendo "
+                                "confirmación por correo. En Supabase debes desactivar "
+                                "'Confirm email' para usar acceso solo con usuario y contraseña."
+                            )
+                    except Exception:
+                        st.error(
+                            "No se pudo crear la cuenta. "
+                            "El usuario puede estar ocupado."
+                        )
+
+        st.caption("🔒 Autenticación protegida por Supabase.")
+        st.markdown("</div>", unsafe_allow_html=True)
+
+# Nothing in the course is visible until login succeeds.
+if not st.session_state.auth_user_id:
+    render_login()
+    st.stop()
+
+
+st.sidebar.markdown("### 👤 Mi cuenta")
+st.sidebar.caption(f"Usuario: **{st.session_state.auth_username}**")
+if st.sidebar.button(
+    "Cerrar sesión",
+    use_container_width=True,
+    key="logout_btn"
+):
+    try:
+        if supabase is not None:
+            supabase.auth.sign_out()
+    except Exception:
+        pass
+
+    st.session_state.auth_user_id = None
+    st.session_state.auth_username = ""
+    st.session_state.auth_access_token = None
+    st.session_state.auth_refresh_token = None
+    st.rerun()
+
+st.sidebar.divider()
+
 st.sidebar.markdown(
     f"""
     <div style="text-align:center;margin:0 0 12px 0;">
@@ -256,7 +573,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · Web Edition v6</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v7</div>
     </div>
     """,
     unsafe_allow_html=True,
