@@ -14,28 +14,130 @@ UNITS=DATA["units"]; SLIDES=DATA["slides"]
 if "slide" not in st.session_state: st.session_state.slide=0
 if "theme" not in st.session_state: st.session_state.theme="Light"
 
-LIGHT={"bg":"#F7F9FC","surface":"#FFFFFF","alt":"#F1F4F8","text":"#172033","muted":"#718096","border":"#E3E8F0","accent":"#7058FF","green":"#58CC02","blue":"#1CB0F6"}
+LIGHT={"bg":"#EEF2F7","surface":"#FFFFFF","alt":"#F7F9FC","text":"#172033","muted":"#667085","border":"#D0D7E2","accent":"#7058FF","green":"#58CC02","blue":"#1CB0F6"}
 DARK={"bg":"#0F172A","surface":"#172033","alt":"#1E293B","text":"#F8FAFC","muted":"#9FB0C7","border":"#2C3A4F","accent":"#7C63FF","green":"#58CC02","blue":"#1CB0F6"}
 C=DARK if st.session_state.theme=="Dark" else LIGHT
 
+shadow = "0 8px 24px rgba(20, 31, 50, 0.08)" if st.session_state.theme=="Light" else "none"
+inner_shadow = "0 3px 12px rgba(20, 31, 50, 0.06)" if st.session_state.theme=="Light" else "none"
+
 st.markdown(f"""
 <style>
-.stApp{{background:{C['bg']};color:{C['text']}}}
-.block-container{{max-width:1250px;padding-top:1.2rem;padding-bottom:3rem}}
-[data-testid="stSidebar"]{{background:{C['surface']};border-right:1px solid {C['border']}}}
-[data-testid="stSidebar"] *{{color:{C['text']}}}
-.hero,.lesson-card{{background:{C['surface']};border:1px solid {C['border']};border-radius:24px;padding:24px;margin-bottom:16px}}
-.hero h1{{color:{C['text']};margin:0}}
-.hero p{{color:{C['muted']}}}
-.title{{font-size:1.35rem;font-weight:800;color:{C['accent']};margin-bottom:14px}}
-.big{{font-size:2.4rem;font-weight:900;text-align:center;color:{C['text']}}}
-.ipa{{text-align:center;color:{C['muted']};font-size:1.1rem;margin-bottom:10px}}
-.row{{background:{C['alt']};border-radius:14px;padding:12px 14px;margin:7px 0}}
-.tip{{background:{C['alt']};border-radius:14px;padding:14px 16px;color:{C['muted']};margin-top:14px}}
-.progress{{background:{C['alt']};height:10px;border-radius:999px;overflow:hidden}}
-.fill{{background:{C['accent']};height:100%;border-radius:999px}}
-div.stButton>button{{width:100%;border-radius:14px;min-height:44px;font-weight:700}}
-img{{border-radius:18px}}
+.stApp{{
+    background:{C['bg']};
+    color:{C['text']};
+}}
+
+.block-container{{
+    max-width:1250px;
+    padding-top:1.2rem;
+    padding-bottom:3rem;
+}}
+
+[data-testid="stSidebar"]{{
+    background:{C['surface']};
+    border-right:1px solid {C['border']};
+    box-shadow: 2px 0 12px rgba(20,31,50,0.04);
+}}
+[data-testid="stSidebar"] *{{
+    color:{C['text']};
+}}
+
+.hero{{
+    background:{C['surface']};
+    border:1px solid {C['border']};
+    border-radius:24px;
+    padding:24px;
+    margin-bottom:18px;
+    box-shadow:{shadow};
+}}
+
+.lesson-card{{
+    background:{C['surface']};
+    border:1px solid {C['border']};
+    border-radius:24px;
+    padding:24px;
+    margin-bottom:18px;
+    box-shadow:{shadow};
+}}
+
+.hero h1{{
+    color:{C['text']};
+    margin:0;
+}}
+
+.hero p{{
+    color:{C['muted']};
+}}
+
+.title{{
+    font-size:1.35rem;
+    font-weight:800;
+    color:{C['accent']};
+    margin-bottom:14px;
+}}
+
+.big{{
+    font-size:2.4rem;
+    font-weight:900;
+    text-align:center;
+    color:{C['text']};
+}}
+
+.ipa{{
+    text-align:center;
+    color:{C['muted']};
+    font-size:1.1rem;
+    margin-bottom:10px;
+}}
+
+.row{{
+    background:{C['alt']};
+    border:1px solid {C['border']};
+    border-radius:14px;
+    padding:12px 14px;
+    margin:8px 0;
+    box-shadow:{inner_shadow};
+}}
+
+.tip{{
+    background:{C['alt']};
+    border:1px solid {C['border']};
+    border-radius:14px;
+    padding:14px 16px;
+    color:{C['muted']};
+    margin-top:14px;
+    box-shadow:{inner_shadow};
+}}
+
+.progress{{
+    background:{C['alt']};
+    border:1px solid {C['border']};
+    height:10px;
+    border-radius:999px;
+    overflow:hidden;
+}}
+
+.fill{{
+    background:{C['accent']};
+    height:100%;
+    border-radius:999px;
+}}
+
+div.stButton>button{{
+    width:100%;
+    border-radius:14px;
+    min-height:44px;
+    font-weight:700;
+    border:1px solid {C['border']};
+    box-shadow:{inner_shadow};
+}}
+
+[data-testid="stImage"] img{{
+    border-radius:18px;
+    border:1px solid {C['border']};
+    box-shadow:{inner_shadow};
+}}
 </style>
 """,unsafe_allow_html=True)
 
@@ -56,7 +158,7 @@ def play(text,key,label="🔊 Listen"):
         except Exception: st.warning("Audio unavailable right now.")
 
 st.sidebar.markdown("## 🇬🇧 English A1")
-st.sidebar.caption("Teacher Studio · Web Edition")
+st.sidebar.caption("Teacher Studio · Web Edition v2")
 st.sidebar.markdown("### Appearance")
 theme=st.sidebar.radio("Theme",["Light","Dark"],horizontal=True,label_visibility="collapsed",index=0 if st.session_state.theme=="Light" else 1)
 if theme!=st.session_state.theme:
@@ -145,3 +247,4 @@ with c3:
     else:
         if st.button("Finish lesson ✓",type="primary"):
             st.success("Unit 1 completed!"); st.balloons()
+
