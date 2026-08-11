@@ -319,6 +319,49 @@ div.stButton>button{{
     line-height:1.55;
 }}
 
+
+/* Inglés ¡YA! branded authentication controls */
+div[data-testid="stTextInput"]:has(input[aria-label="Usuario"]) input,
+div[data-testid="stTextInput"]:has(input[aria-label="Contraseña"]) input,
+div[data-testid="stTextInput"]:has(input[aria-label="Nuevo usuario"]) input,
+div[data-testid="stTextInput"]:has(input[aria-label="Nueva contraseña"]) input,
+div[data-testid="stTextInput"]:has(input[aria-label="Repite la contraseña"]) input {{
+    background:#0B3F98 !important;
+    color:#FFFFFF !important;
+    border:1px solid #0B3F98 !important;
+    -webkit-text-fill-color:#FFFFFF !important;
+}}
+div[data-testid="stTextInput"] input::placeholder {{
+    color:rgba(255,255,255,.78) !important;
+    opacity:1 !important;
+}}
+div[data-testid="stTextInput"] label p {{
+    color:#0B3F98 !important;
+    font-weight:800 !important;
+}}
+div[data-testid="stTextInput"] button svg {{
+    color:#FFFFFF !important;
+    fill:#FFFFFF !important;
+}}
+div.stButton > button[kind="secondary"] {{
+    transition:transform .12s ease, box-shadow .12s ease;
+}}
+
+
+div.stButton > button[kind="primary"],
+button[data-testid="stBaseButton-primary"] {{
+    background:#E51B23 !important;
+    border-color:#E51B23 !important;
+    color:#FFFFFF !important;
+    font-weight:800 !important;
+}}
+div.stButton > button[kind="primary"]:hover,
+button[data-testid="stBaseButton-primary"]:hover {{
+    background:#C9151C !important;
+    border-color:#C9151C !important;
+    color:#FFFFFF !important;
+}}
+
 </style>
 """,unsafe_allow_html=True)
 
