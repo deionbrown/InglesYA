@@ -436,34 +436,6 @@ def login_with_username(username, password):
     })
     return save_login_session(response, clean)
 
-def signup_with_username(username, password):
-    clean = normalize_username(username)
-    if len(clean) < 3:
-        raise ValueError("El usuario debe tener al menos 3 caracteres.")
-    if len(password) < 6:
-        raise ValueError("La contraseña debe tener al menos 6 caracteres.")
-
-    internal_email = username_to_internal_email(clean)
-
-    response = supabase.auth.sign_up({
-        "email": internal_email,
-        "password": password,
-        "options": {
-            "data": {
-                "username": clean,
-                "brand": "InglesYA",
-            }
-        },
-    })
-
-    # If Confirm Email is OFF, Supabase returns a session immediately.
-    if response.session:
-        save_login_session(response, clean)
-        return "logged_in"
-
-    # With confirmation ON, the synthetic address cannot receive email.
-    return "needs_confirmation"
-
 def render_login():
     # No course/sidebar content before authentication.
     st.markdown(
@@ -546,60 +518,9 @@ def render_login():
                 except Exception:
                     st.error("Usuario o contraseña incorrectos.")
 
-        with st.expander("Crear una cuenta"):
-            st.caption(
-                "Puedes permitir que tus alumnos creen su usuario directamente."
-            )
-
-            new_username = st.text_input(
-                "Nuevo usuario",
-                placeholder="Ejemplo: pedro15",
-                key="auth_signup_username"
-            )
-            new_password = st.text_input(
-                "Nueva contraseña",
-                type="password",
-                placeholder="Mínimo 6 caracteres",
-                key="auth_signup_password"
-            )
-            confirm_password = st.text_input(
-                "Repite la contraseña",
-                type="password",
-                key="auth_signup_confirm"
-            )
-
-            if st.button(
-                "Crear cuenta",
-                use_container_width=True,
-                key="auth_signup_btn"
-            ):
-                if supabase is None:
-                    st.error("Supabase no está configurado.")
-                elif new_password != confirm_password:
-                    st.warning("Las contraseñas no coinciden.")
-                else:
-                    try:
-                        result = signup_with_username(
-                            new_username,
-                            new_password
-                        )
-
-                        if result == "logged_in":
-                            st.success("Cuenta creada.")
-                            st.rerun()
-                        else:
-                            st.error(
-                                "La cuenta fue creada pero Supabase está pidiendo "
-                                "confirmación por correo. En Supabase debes desactivar "
-                                "'Confirm email' para usar acceso solo con usuario y contraseña."
-                            )
-                    except Exception:
-                        st.error(
-                            "No se pudo crear la cuenta. "
-                            "El usuario puede estar ocupado."
-                        )
-
+        st.info("Las cuentas son creadas por el administrador de Inglés ¡YA!.")
         st.caption("🔒 Autenticación protegida por Supabase.")
+
         st.markdown("</div>", unsafe_allow_html=True)
 
 # Nothing in the course is visible until login succeeds.
@@ -642,7 +563,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · Web Edition v7</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v11</div>
     </div>
     """,
     unsafe_allow_html=True,
