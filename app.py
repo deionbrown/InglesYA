@@ -34,19 +34,6 @@ st.set_page_config(
 # SUPABASE USERNAME + PASSWORD AUTH
 # ============================================================
 
-AUTH_DOMAIN = "auth.inglesya.local"
-
-def normalize_username(value: str) -> str:
-    """Keep usernames predictable and safe for the internal Supabase identity."""
-    value = (value or "").strip().lower()
-    value = re.sub(r"[^a-z0-9._-]", "", value)
-    return value[:32]
-
-def username_to_internal_email(username: str) -> str:
-    # Supabase Auth password login officially uses email or phone.
-    # The learner sees only a username. The internal email is never shown.
-    return f"{normalize_username(username)}@{AUTH_DOMAIN}"
-
 def get_supabase():
     """
     Public app client. Use ONLY the project's publishable/anon key here.
@@ -66,8 +53,8 @@ supabase = get_supabase()
 
 if "auth_user_id" not in st.session_state:
     st.session_state.auth_user_id = None
-if "auth_username" not in st.session_state:
-    st.session_state.auth_username = ""
+if "auth_email" not in st.session_state:
+    st.session_state.auth_email = ""
 if "auth_access_token" not in st.session_state:
     st.session_state.auth_access_token = None
 if "auth_refresh_token" not in st.session_state:
@@ -321,7 +308,7 @@ div.stButton>button{{
 
 
 /* Inglés ¡YA! branded authentication controls */
-div[data-testid="stTextInput"]:has(input[aria-label="Usuario"]) input,
+div[data-testid="stTextInput"]:has(input[aria-label="Correo electrónico"]) input,
 div[data-testid="stTextInput"]:has(input[aria-label="Contraseña"]) input,
 div[data-testid="stTextInput"]:has(input[aria-label="Nuevo usuario"]) input,
 div[data-testid="stTextInput"]:has(input[aria-label="Nueva contraseña"]) input,
@@ -412,26 +399,25 @@ def play(text,key,label="🔊 Listen"):
 # LOGIN SCREEN
 # ============================================================
 
-def save_login_session(response, username):
+def save_login_session(response, email):
     if not response or not response.user or not response.session:
         return False
 
     st.session_state.auth_user_id = response.user.id
-    st.session_state.auth_username = normalize_username(username)
+    st.session_state.auth_email = (email or "").strip().lower()
     st.session_state.auth_access_token = response.session.access_token
     st.session_state.auth_refresh_token = response.session.refresh_token
     return True
 
-def login_with_username(username, password):
-    clean = normalize_username(username)
-    if not clean:
-        raise ValueError("Escribe un usuario válido.")
+def login_with_email(email, password):
+    clean = (email or "").strip().lower()
+    if not clean or "@" not in clean:
+        raise ValueError("Escribe un correo electrónico válido.")
     if not password:
         raise ValueError("Escribe tu contraseña.")
 
-    internal_email = username_to_internal_email(clean)
     response = supabase.auth.sign_in_with_password({
-        "email": internal_email,
+        "email": clean,
         "password": password,
     })
     return save_login_session(response, clean)
@@ -482,14 +468,14 @@ def render_login():
         st.markdown('<div class="auth-panel">', unsafe_allow_html=True)
         st.markdown('<div class="auth-title">Iniciar sesión</div>', unsafe_allow_html=True)
         st.markdown(
-            '<div class="auth-subtitle">Usa tu usuario y contraseña de Inglés ¡YA!</div>',
+            '<div class="auth-subtitle">Usa tu correo electrónico y contraseña de Inglés ¡YA!</div>',
             unsafe_allow_html=True
         )
 
-        username = st.text_input(
-            "Usuario",
-            placeholder="Ejemplo: maria01",
-            key="auth_login_username"
+        email = st.text_input(
+            "Correo electrónico",
+            placeholder="ejemplo@correo.com",
+            key="auth_login_email"
         )
         password = st.text_input(
             "Contraseña",
@@ -511,14 +497,14 @@ def render_login():
                 key="auth_login_btn"
             ):
                 try:
-                    if login_with_username(username, password):
+                    if login_with_email(email, password):
                         st.rerun()
                     else:
                         st.error("No se pudo iniciar sesión.")
                 except Exception:
-                    st.error("Usuario o contraseña incorrectos.")
+                    st.error("Correo o contraseña incorrectos.")
 
-        st.info("Las cuentas son creadas por el administrador de Inglés ¡YA!.")
+        st.info("Las cuentas son creadas por el administrador de Inglés ¡YA! en Supabase.")
         st.caption("🔒 Autenticación protegida por Supabase.")
 
         st.markdown("</div>", unsafe_allow_html=True)
@@ -530,7 +516,7 @@ if not st.session_state.auth_user_id:
 
 
 st.sidebar.markdown("### 👤 Mi cuenta")
-st.sidebar.caption(f"Usuario: **{st.session_state.auth_username}**")
+st.sidebar.caption(f"Correo: **{st.session_state.auth_email}**")
 if st.sidebar.button(
     "Cerrar sesión",
     use_container_width=True,
@@ -543,7 +529,7 @@ if st.sidebar.button(
         pass
 
     st.session_state.auth_user_id = None
-    st.session_state.auth_username = ""
+    st.session_state.auth_email = ""
     st.session_state.auth_access_token = None
     st.session_state.auth_refresh_token = None
     st.rerun()
@@ -563,7 +549,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · Web Edition v11</div>
+      <div class="brand-sub">English A1 Teacher Studio · Web Edition v12</div>
     </div>
     """,
     unsafe_allow_html=True,
