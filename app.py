@@ -362,6 +362,32 @@ button[data-testid="stBaseButton-primary"]:hover {{
     color:#FFFFFF !important;
 }}
 
+
+/* Keep the "Crear una cuenta" expander gray when open/selected */
+div[data-testid="stExpander"] details {{
+    background: transparent !important;
+    border: none !important;
+}}
+div[data-testid="stExpander"] details > summary {{
+    background: #E7EBF1 !important;
+    color: #172033 !important;
+    border: 1px solid #D0D7E2 !important;
+    border-radius: 12px !important;
+}}
+div[data-testid="stExpander"] details[open] > summary {{
+    background: #DDE2E8 !important;
+    color: #172033 !important;
+    border-color: #C7CFDA !important;
+}}
+div[data-testid="stExpander"] details > summary:hover {{
+    background: #DDE2E8 !important;
+    color: #172033 !important;
+}}
+div[data-testid="stExpander"] summary svg {{
+    color: #172033 !important;
+    fill: #172033 !important;
+}}
+
 </style>
 """,unsafe_allow_html=True)
 
