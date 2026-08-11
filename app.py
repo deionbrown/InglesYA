@@ -270,28 +270,28 @@ div.stButton>button{{
     color:{C['muted']};
 }}
 
-.auth-logo-wrap {
+.auth-logo-wrap {{
     text-align:center;
     margin:6px 0 18px 0;
-}
-.auth-panel {
+}}
+.auth-panel {{
     background:white;
     border:1px solid #D9E0EA;
     border-radius:26px;
     padding:30px;
     box-shadow:0 16px 42px rgba(20,31,50,.10);
-}
-.auth-title {
+}}
+.auth-title {{
     font-size:2rem;
     font-weight:900;
     color:#10213E;
     margin-bottom:4px;
-}
-.auth-subtitle {
+}}
+.auth-subtitle {{
     color:#68758A;
     margin-bottom:18px;
-}
-.auth-feature {
+}}
+.auth-feature {{
     background:#F4F7FB;
     border:1px solid #DCE3ED;
     border-radius:14px;
@@ -299,25 +299,25 @@ div.stButton>button{{
     margin:8px 0;
     color:#21314D;
     font-weight:650;
-}
-.auth-brand-panel {
+}}
+.auth-brand-panel {{
     background:linear-gradient(145deg,#0D2E6B,#164995);
     border-radius:28px;
     padding:34px;
     color:white;
     min-height:520px;
     box-shadow:0 18px 45px rgba(11,36,80,.16);
-}
-.auth-brand-panel h1 {
+}}
+.auth-brand-panel h1 {{
     color:white;
     line-height:1.07;
     font-size:2.4rem;
-}
-.auth-brand-panel p {
+}}
+.auth-brand-panel p {{
     color:#E4EDFF;
     font-size:1.05rem;
     line-height:1.55;
-}
+}}
 
 </style>
 """,unsafe_allow_html=True)
