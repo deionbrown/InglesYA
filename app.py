@@ -555,7 +555,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v15</div>
+      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v16</div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -595,13 +595,16 @@ if image_name:
 
 t=s["type"]
 if t=="warmup":
+    headline = s.get("headline", "")
+    ipa_text = s.get("ipa", "")
+    ipa_html = f'<div class="ipa">{ipa_text}</div>' if ipa_text else ""
     st.markdown(
-        f'<div class="big">{s["headline"]}</div><div class="ipa">{s["ipa"]}</div>',
+        f'<div class="big">{headline}</div>{ipa_html}',
         unsafe_allow_html=True
     )
-    play(s["headline"],"warm")
+    play(s.get("headline",""),"warm") if s.get("headline") else None
     st.markdown(
-        f'<div class="tip">💡 <b>Teacher note:</b> {s["note"]}</div>',
+        f'<div class="tip">💡 <b>Teacher note:</b> {s.get("note","")}</div>',
         unsafe_allow_html=True
     )
 
