@@ -39,7 +39,11 @@
         "items": [
           "Hi! I'm Daniel.",
           "Hello! I'm Emma."
-        ]
+        ],
+        "translations": {
+          "Hi! I'm Daniel.": "¡Hola! Soy Daniel.",
+          "Hello! I'm Emma.": "¡Hola! Soy Emma."
+        }
       },
       {
         "type": "repeat",
@@ -51,7 +55,14 @@
           "Good morning!",
           "Good afternoon!",
           "Good evening!"
-        ]
+        ],
+        "translations": {
+          "Hello!": "¡Hola!",
+          "Hi!": "¡Hola!",
+          "Good morning!": "¡Buenos días!",
+          "Good afternoon!": "¡Buenas tardes!",
+          "Good evening!": "¡Buenas noches!"
+        }
       },
       {
         "type": "pattern",
@@ -62,7 +73,11 @@
           "I'm Daniel."
         ],
         "note": "I am → I'm",
-        "task": "Repite “I'm Daniel.” y cambia Daniel por tu nombre."
+        "task": "Repite “I'm Daniel.” y cambia Daniel por tu nombre.",
+        "translations": {
+          "I am Daniel.": "Soy Daniel.",
+          "I'm Daniel.": "Soy Daniel."
+        }
       },
       {
         "type": "table",
@@ -105,7 +120,13 @@
           "You are Anna. → You're Anna.",
           "He is Marco. → He's Marco.",
           "She is Julia. → She's Julia."
-        ]
+        ],
+        "translations": {
+          "I am Carlos. → I'm Carlos.": "Soy Carlos. → Soy Carlos.",
+          "You are Anna. → You're Anna.": "Tú eres Anna. → Eres Anna.",
+          "He is Marco. → He's Marco.": "Él es Marco. → Él es Marco.",
+          "She is Julia. → She's Julia.": "Ella es Julia. → Ella es Julia."
+        }
       },
       {
         "type": "pronunciation",
@@ -117,7 +138,13 @@
           "He's Marco.",
           "She's Julia."
         ],
-        "note": "❌ I — am — Daniel.   ✅ I'm Daniel."
+        "note": "❌ I — am — Daniel.   ✅ I'm Daniel.",
+        "translations": {
+          "I'm Daniel.": "Soy Daniel.",
+          "You're Anna.": "Eres Anna.",
+          "He's Marco.": "Él es Marco.",
+          "She's Julia.": "Ella es Julia."
+        }
       },
       {
         "type": "repeat",
@@ -126,7 +153,11 @@
         "items": [
           "What's your name?",
           "I'm Sofia."
-        ]
+        ],
+        "translations": {
+          "What's your name?": "¿Cómo te llamas?",
+          "I'm Sofia.": "Soy Sofia."
+        }
       },
       {
         "type": "repeat",
@@ -137,7 +168,13 @@
           "I'm from Mexico.",
           "I'm from Spain.",
           "I'm from Brazil."
-        ]
+        ],
+        "translations": {
+          "I'm from Peru.": "Soy de Perú.",
+          "I'm from Mexico.": "Soy de México.",
+          "I'm from Spain.": "Soy de España.",
+          "I'm from Brazil.": "Soy de Brasil."
+        }
       },
       {
         "type": "repeat",
@@ -146,7 +183,11 @@
         "items": [
           "Where are you from?",
           "I'm from Peru."
-        ]
+        ],
+        "translations": {
+          "Where are you from?": "¿De dónde eres?",
+          "I'm from Peru.": "Soy de Perú."
+        }
       },
       {
         "type": "vocab2",
@@ -178,7 +219,10 @@
             "Italian"
           ]
         ],
-        "example": "I'm Peruvian."
+        "example": "I'm Peruvian.",
+        "translations": {
+          "I'm Peruvian.": "Soy peruano/a."
+        }
       },
       {
         "type": "practice",
@@ -190,7 +234,14 @@
           "I'm from Peruvian. ❌",
           "I'm from _____.",
           "I'm _____."
-        ]
+        ],
+        "translations": {
+          "I'm from Peru. ✅": "Soy de Perú. ✅",
+          "I'm Peruvian. ✅": "Soy peruano/a. ✅",
+          "I'm from Peruvian. ❌": "Soy de peruano/a. ❌",
+          "I'm from _____.": "Soy de _____.",
+          "I'm _____.": "Soy _____."
+        }
       },
       {
         "type": "vocab",
@@ -226,7 +277,11 @@
         "examples": [
           "I'm a teacher.",
           "I'm an engineer."
-        ]
+        ],
+        "translations": {
+          "I'm a teacher.": "Soy profesor/a.",
+          "I'm an engineer.": "Soy ingeniero/a."
+        }
       },
       {
         "type": "pattern",
@@ -239,7 +294,13 @@
           "an engineer"
         ],
         "task": "Completa: I'm ___ teacher. / I'm ___ engineer.",
-        "answer": "I'm a teacher. / I'm an engineer."
+        "answer": "I'm a teacher. / I'm an engineer.",
+        "translations": {
+          "a teacher": "un/a profesor/a",
+          "a student": "un/a estudiante",
+          "a doctor": "un/a médico/a",
+          "an engineer": "un/a ingeniero/a"
+        }
       },
       {
         "type": "practice",
@@ -252,7 +313,15 @@
           "She's Anna.",
           "She's Spanish.",
           "She's a teacher."
-        ]
+        ],
+        "translations": {
+          "He's Marco.": "Él es Marco.",
+          "He's Italian.": "Él es italiano.",
+          "He's an engineer.": "Él es ingeniero.",
+          "She's Anna.": "Ella es Anna.",
+          "She's Spanish.": "Ella es española.",
+          "She's a teacher.": "Ella es profesora."
+        }
       },
       {
         "type": "pattern",
@@ -264,7 +333,12 @@
           "She's not Italian."
         ],
         "task": "I'm a student. → ?",
-        "answer": "I'm not a student."
+        "answer": "I'm not a student.",
+        "translations": {
+          "I'm a teacher. → I'm not a teacher.": "Soy profesor/a. → No soy profesor/a.",
+          "He's not a doctor.": "Él no es médico.",
+          "She's not Italian.": "Ella no es italiana."
+        }
       },
       {
         "type": "pattern",
@@ -274,7 +348,12 @@
           "You're a teacher. → Are you a teacher?",
           "Yes, I am.",
           "No, I'm not."
-        ]
+        ],
+        "translations": {
+          "You're a teacher. → Are you a teacher?": "Eres profesor/a. → ¿Eres profesor/a?",
+          "Yes, I am.": "Sí.",
+          "No, I'm not.": "No."
+        }
       },
       {
         "type": "pattern",
@@ -287,7 +366,15 @@
           "Is she Italian?",
           "Yes, she is.",
           "No, she isn't."
-        ]
+        ],
+        "translations": {
+          "Is he a teacher?": "¿Él es profesor?",
+          "Yes, he is.": "Sí.",
+          "No, he isn't.": "No.",
+          "Is she Italian?": "¿Ella es italiana?",
+          "Yes, she is.": "Sí.",
+          "No, she isn't.": "No."
+        }
       },
       {
         "type": "mcq_set",
@@ -349,7 +436,17 @@
             "I'm engineer.",
             "I'm an engineer."
           ]
-        ]
+        ],
+        "translations": {
+          "I is Carlos.": "Yo es Carlos. (incorrecto)",
+          "I'm Carlos.": "Soy Carlos.",
+          "She are Mexican.": "Ella son mexicana. (incorrecto)",
+          "She's Mexican.": "Ella es mexicana.",
+          "I from Peru.": "Yo de Perú. (incorrecto)",
+          "I'm from Peru.": "Soy de Perú.",
+          "I'm engineer.": "Soy ingeniero. (falta el artículo en inglés)",
+          "I'm an engineer.": "Soy ingeniero/a."
+        }
       },
       {
         "type": "dialogue",
@@ -384,7 +481,16 @@
             "A",
             "No, I'm not. I'm an engineer."
           ]
-        ]
+        ],
+        "translations": {
+          "Hi! What's your name?": "¡Hola! ¿Cómo te llamas?",
+          "I'm Laura. What's your name?": "Soy Laura. ¿Cómo te llamas?",
+          "I'm David. Where are you from?": "Soy David. ¿De dónde eres?",
+          "I'm from Peru. And you?": "Soy de Perú. ¿Y tú?",
+          "I'm from Mexico. Are you a student?": "Soy de México. ¿Eres estudiante?",
+          "Yes, I am. And you?": "Sí. ¿Y tú?",
+          "No, I'm not. I'm an engineer.": "No. Soy ingeniero/a."
+        }
       },
       {
         "type": "speaking",
@@ -395,7 +501,13 @@
           "I'm from _____.",
           "I'm _____.",
           "I'm a/an _____."
-        ]
+        ],
+        "translations": {
+          "Hi! I'm _____.": "¡Hola! Soy _____.",
+          "I'm from _____.": "Soy de _____.",
+          "I'm _____.": "Soy _____.",
+          "I'm a/an _____.": "Soy _____."
+        }
       },
       {
         "type": "speaking",
@@ -406,7 +518,13 @@
           "Where are you from?",
           "Are you a student?",
           "Are you a teacher?"
-        ]
+        ],
+        "translations": {
+          "What's your name?": "¿Cómo te llamas?",
+          "Where are you from?": "¿De dónde eres?",
+          "Are you a student?": "¿Eres estudiante?",
+          "Are you a teacher?": "¿Eres profesor/a?"
+        }
       },
       {
         "type": "speaking",
@@ -418,7 +536,13 @@
           "He's/She's _____.",
           "He's/She's a/an _____."
         ],
-        "model": "He's Carlos. He's from Peru. He's Peruvian. He's an engineer."
+        "model": "He's Carlos. He's from Peru. He's Peruvian. He's an engineer.",
+        "translations": {
+          "He's/She's _____.": "Él/Ella es _____.",
+          "He's/She's from _____.": "Él/Ella es de _____.",
+          "He's/She's a/an _____.": "Él/Ella es _____.",
+          "He's Carlos. He's from Peru. He's Peruvian. He's an engineer.": "Él es Carlos. Es de Perú. Es peruano. Es ingeniero."
+        }
       },
       {
         "type": "speaking",
@@ -444,7 +568,17 @@
           "Where are you from?",
           "Are you a student?",
           "He's… / She's…"
-        ]
+        ],
+        "translations": {
+          "I'm Daniel.": "Soy Daniel.",
+          "I'm from Peru.": "Soy de Perú.",
+          "I'm Peruvian.": "Soy peruano/a.",
+          "I'm an engineer.": "Soy ingeniero/a.",
+          "What's your name?": "¿Cómo te llamas?",
+          "Where are you from?": "¿De dónde eres?",
+          "Are you a student?": "¿Eres estudiante?",
+          "He's… / She's…": "Él es… / Ella es…"
+        }
       },
       {
         "type": "final_challenge",
