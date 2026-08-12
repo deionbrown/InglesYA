@@ -14,6 +14,9 @@ def resolve_image(filename):
     1) inside assets/
     2) directly beside app.py in the GitHub repository
     """
+    if not filename:
+        return None
+
     candidates = [
         ASSETS / filename,
         BASE / filename,
@@ -552,7 +555,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v14</div>
+      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v15</div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -582,11 +585,13 @@ st.markdown(f"""<div class="hero"><h1>Unit {st.session_state.unit} · {unit_titl
 st.markdown('<div class="lesson-card">',unsafe_allow_html=True)
 st.markdown(f'<div class="title">{s["title"]}</div>',unsafe_allow_html=True)
 
-img=resolve_image(s["image"])
-if img is not None:
-    st.image(str(img), use_container_width=True)
-else:
-    st.warning(f"Lesson image not found: {s['image']}")
+image_name = s.get("image")
+if image_name:
+    img = resolve_image(image_name)
+    if img is not None:
+        st.image(str(img), use_container_width=True)
+    else:
+        st.warning(f"Lesson image not found: {image_name}")
 
 t=s["type"]
 if t=="warmup":
