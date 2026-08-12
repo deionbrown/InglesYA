@@ -627,6 +627,7 @@ UNIT_COVER_IMAGES = {
     3: "unit_03_countries_nationalities_languages.png",
     4: "unit_04_family_people.png",
     5: "unit_05_numbers_dates_birthdays.png",
+    6: "unit_06_daily_routine.png",
 }
 if idx == 0:
     cover_name = UNIT_COVER_IMAGES.get(st.session_state.unit)
