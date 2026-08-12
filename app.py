@@ -600,10 +600,10 @@ theme=st.sidebar.radio("Theme",["Light","Dark"],horizontal=True,label_visibility
 if theme!=st.session_state.theme:
     st.session_state.theme=theme; st.rerun()
 
-st.sidebar.markdown("### Units")
+st.sidebar.markdown("### Clases")
 for i,u in enumerate(UNITS,1):
     button_type = "primary" if st.session_state.unit == i else "secondary"
-    if st.sidebar.button(f"Unit {i} · {u}", type=button_type, key=f"u{i}"):
+    if st.sidebar.button(f"Clase {i} · {u}", type=button_type, key=f"u{i}"):
         st.session_state.unit=i
         st.session_state.slide=0
         st.rerun()
@@ -613,7 +613,7 @@ s=SLIDES[idx]
 pct=(idx+1)/len(SLIDES)*100
 
 unit_title=UNITS[st.session_state.unit-1]
-st.markdown(f"""<div class="hero"><h1>Unit {st.session_state.unit} · {unit_title}</h1><p>A1 · Complete Unit Lesson</p>
+st.markdown(f"""<div class="hero"><h1>Clase {st.session_state.unit} · {unit_title}</h1><p>Inglés A1 · Clase integrada · 90 minutos</p>
 <div style="display:flex;justify-content:space-between;color:{C['muted']};margin-top:14px"><span>{s['title']}</span><span>{idx+1}/{len(SLIDES)}</span></div>
 <div class="progress" style="margin-top:8px"><div class="fill" style="width:{pct:.1f}%"></div></div></div>""",unsafe_allow_html=True)
 
@@ -623,12 +623,6 @@ st.markdown(f'<div class="title">{s["title"]}</div>',unsafe_allow_html=True)
 # Unit cover image: shown only at the beginning of the unit (Warm-up)
 UNIT_COVER_IMAGES = {
     1: "unit_01_introductions_greetings.png",
-    2: "unit_02_personal_information.png",
-    3: "unit_03_countries_nationalities_languages.png",
-    4: "unit_04_family_people.png",
-    5: "unit_05_numbers_dates_birthdays.png",
-    6: "unit_06_daily_routine.png",
-    7: "unit_07_time_schedules.png",
 }
 if idx == 0:
     cover_name = UNIT_COVER_IMAGES.get(st.session_state.unit)
@@ -646,7 +640,55 @@ if image_name:
         st.warning(f"Lesson image not found: {image_name}")
 
 t=s["type"]
-if t=="warmup":
+if t=="objective":
+    st.markdown(f'<div class="big">{s.get("headline","")}</div>', unsafe_allow_html=True)
+    for item in s.get("items",[]): st.markdown(f'<div class="row">👉 {item}</div>', unsafe_allow_html=True)
+    if s.get("goal"): st.markdown(f'<div class="goal-card"><b>🎯 Resultado</b><br>{s["goal"]}</div>', unsafe_allow_html=True)
+
+elif t in ("repeat","pattern","practice","pronunciation"):
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
+    for i,item in enumerate(s.get("items",[])):
+        a,b=st.columns([5,1])
+        with a: st.markdown(f'<div class="row"><b>{item}</b></div>', unsafe_allow_html=True)
+        with b: play(item,f"x_{idx}_{i}")
+    if s.get("note"): st.markdown(f'<div class="tip">{s["note"]}</div>', unsafe_allow_html=True)
+    if s.get("task"): st.markdown(f'<div class="goal-card"><b>👉 Ahora tú</b><br>{s["task"]}</div>', unsafe_allow_html=True)
+    if s.get("answer"):
+        with st.expander("Ver respuesta"): st.write(s["answer"])
+
+elif t=="table":
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
+    st.table([dict(zip(s["headers"],r)) for r in s["rows"]])
+    for i,r in enumerate(s.get("rows",[])):
+        if len(r)>=3: play(r[2],f"tbl_{idx}_{i}")
+
+elif t=="vocab2":
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
+    st.table([{"País":a,"Nacionalidad":b} for a,b in s.get("pairs",[])])
+    if s.get("example"):
+        st.markdown(f'<div class="goal-card"><b>Ejemplo:</b> {s["example"]}</div>', unsafe_allow_html=True)
+        play(s["example"],f"v2_{idx}")
+
+elif t=="mcq_set":
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
+    answers=[]
+    for i,q in enumerate(s.get("questions",[])):
+        answers.append(st.radio(f'{i+1}. {q["q"]}',q["options"],key=f'mcq_{st.session_state.unit}_{idx}_{i}'))
+    if st.button("Comprobar respuestas",key=f'mcqcheck_{idx}'):
+        score=sum(a==q["answer"] for a,q in zip(answers,s["questions"]))
+        st.success(f'{score}/{len(answers)} correctas') if score==len(answers) else st.info(f'{score}/{len(answers)} correctas. Revisa e inténtalo otra vez.')
+
+elif t=="correction":
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
+    for wrong,right in s.get("items",[]):
+        st.markdown(f'<div class="row">❌ <b>{wrong}</b></div>', unsafe_allow_html=True)
+        with st.expander("Ver corrección"): st.write(f'✅ {right}')
+
+elif t=="final_challenge":
+    st.markdown(f'<div class="goal-card"><b>🏁 {s.get("instruction","")}</b></div>', unsafe_allow_html=True)
+    for item in s.get("items",[]): st.markdown(f'<div class="row">👉 {item}</div>', unsafe_allow_html=True)
+
+elif t=="warmup":
     headline = s.get("headline", "")
     ipa_text = s.get("ipa", "")
     ipa_html = f'<div class="ipa">{ipa_text}</div>' if ipa_text else ""
@@ -676,10 +718,14 @@ if t=="warmup":
         )
 
 elif t=="vocab":
+    if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
     for i,(w,ipa,es) in enumerate(s["items"]):
         a,b=st.columns([5,1])
         with a: st.markdown(f'<div class="row"><b>{w}</b> &nbsp; <span style="color:{C["muted"]}">{ipa}</span><br><span style="color:{C["muted"]}">{es}</span></div>',unsafe_allow_html=True)
         with b: play(w,f"v{i}")
+    for ex in s.get("examples",[]):
+        st.markdown(f'<div class="row"><b>{ex}</b></div>',unsafe_allow_html=True)
+        play(ex,f"vex_{idx}_{ex}")
 
 elif t=="sentences":
     for i,(en,es) in enumerate(s["items"]):
@@ -772,4 +818,4 @@ with c3:
             st.session_state.slide+=1; st.rerun()
     else:
         if st.button("Finish lesson ✓",type="primary"):
-            st.success(f"Unit {st.session_state.unit} completed!"); st.balloons()
+            st.success(f"Clase {st.session_state.unit} completada!"); st.balloons()
