@@ -590,7 +590,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v18 · ACADSOC-style flow · Light/Dark UI fix</div>
+      
     </div>
     """,
     unsafe_allow_html=True,
@@ -619,6 +619,17 @@ st.markdown(f"""<div class="hero"><h1>Unit {st.session_state.unit} · {unit_titl
 
 st.markdown('<div class="lesson-card">',unsafe_allow_html=True)
 st.markdown(f'<div class="title">{s["title"]}</div>',unsafe_allow_html=True)
+
+# Unit cover image: shown only at the beginning of the unit (Warm-up)
+UNIT_COVER_IMAGES = {
+    1: "unit_01_introductions_greetings.png",
+}
+if idx == 0:
+    cover_name = UNIT_COVER_IMAGES.get(st.session_state.unit)
+    if cover_name:
+        cover_img = resolve_image(cover_name)
+        if cover_img is not None:
+            st.image(str(cover_img), use_container_width=True)
 
 image_name = s.get("image")
 if image_name:
