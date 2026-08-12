@@ -1,229 +1,461 @@
 {
   "units": [
-    "Introductions & Greetings",
-    "Personal Information",
-    "Countries, Nationalities & Languages",
-    "Family & People",
-    "Numbers, Dates & Birthdays",
-    "Daily Routine",
-    "Time & Schedules",
-    "Home & Furniture",
-    "Food & Drinks",
-    "At a Restaurant",
-    "Shopping & Prices",
-    "Clothes & Appearance",
-    "Free Time, Hobbies & Likes",
-    "Places in Town & Directions",
-    "Weather & Seasons",
-    "Health & Basic Needs"
+    "Getting to Know Someone",
+    "My Daily Routine",
+    "Talking About Other People",
+    "Everyday Questions",
+    "Likes & Preferences",
+    "Frequency & Schedules",
+    "Describing People & Things",
+    "Home, Neighborhood & City",
+    "What's Happening Now?",
+    "Routine vs Right Now",
+    "Abilities & Requests",
+    "Food, Shopping & Quantities",
+    "Talking About the Past",
+    "Past Activities & Experiences",
+    "Plans & Comparisons",
+    "My Life: Past, Present & Future"
   ],
   "unit_slides": {
     "1": [
       {
-        "type": "warmup",
-        "title": "Warm-up",
-        "headline": "Meet & Greet",
-        "note": "Look, think and talk about greetings, names and first meetings.",
-        "questions": [
-          "What can you see?",
-          "What words do you already know?",
-          "What can you say about this topic?"
+        "type": "objective",
+        "title": "Objetivo",
+        "headline": "Hoy vas a conocer a alguien en inglés.",
+        "items": [
+          "saludar",
+          "presentarte",
+          "decir de dónde eres",
+          "decir a qué te dedicas",
+          "hacer preguntas básicas"
         ],
-        "goal": "Start communicating about introductions & greetings."
+        "goal": "Al final, podrás mantener una conversación básica de presentación."
       },
       {
-        "type": "vocab",
-        "title": "Key Vocabulary",
+        "type": "repeat",
+        "title": "Primer encuentro",
+        "instruction": "Escucha y repite. Luego usa tu propio nombre.",
         "items": [
+          "Hi! I'm Daniel.",
+          "Hello! I'm Emma."
+        ]
+      },
+      {
+        "type": "repeat",
+        "title": "Saludos",
+        "instruction": "Escucha y repite. Luego elige un saludo y saluda a un compañero.",
+        "items": [
+          "Hello!",
+          "Hi!",
+          "Good morning!",
+          "Good afternoon!",
+          "Good evening!"
+        ]
+      },
+      {
+        "type": "pattern",
+        "title": "Decir tu nombre",
+        "instruction": "Observa. Las dos formas son correctas.",
+        "items": [
+          "I am Daniel.",
+          "I'm Daniel."
+        ],
+        "note": "I am → I'm",
+        "task": "Repite “I'm Daniel.” y cambia Daniel por tu nombre."
+      },
+      {
+        "type": "table",
+        "title": "Primera gramática",
+        "instruction": "Observa el patrón y repite las formas cortas.",
+        "headers": [
+          "Pronombre",
+          "Verbo",
+          "Forma corta"
+        ],
+        "rows": [
           [
-            "hello",
-            "",
-            ""
+            "I",
+            "am",
+            "I'm"
           ],
           [
-            "hi",
-            "",
-            ""
+            "you",
+            "are",
+            "you're"
           ],
           [
-            "good morning",
-            "",
-            ""
+            "he",
+            "is",
+            "he's"
           ],
           [
-            "good afternoon",
-            "",
-            ""
-          ],
-          [
-            "good evening",
-            "",
-            ""
-          ],
-          [
-            "goodbye",
-            "",
-            ""
-          ],
-          [
-            "bye",
-            "",
-            ""
-          ],
-          [
-            "name",
-            "",
-            ""
-          ],
-          [
-            "first name",
-            "",
-            ""
-          ],
-          [
-            "last name",
-            "",
-            ""
-          ],
-          [
-            "meet",
-            "",
-            ""
-          ],
-          [
-            "nice",
-            "",
-            ""
-          ],
-          [
-            "please",
-            "",
-            ""
-          ],
-          [
-            "thank you",
-            "",
-            ""
-          ],
-          [
-            "welcome",
-            "",
-            ""
+            "she",
+            "is",
+            "she's"
           ]
         ]
       },
       {
-        "type": "sentences",
-        "title": "Key Sentences",
+        "type": "practice",
+        "title": "Personas",
+        "instruction": "Observa y completa oralmente. Después usa la forma corta.",
+        "items": [
+          "I am Carlos. → I'm Carlos.",
+          "You are Anna. → You're Anna.",
+          "He is Marco. → He's Marco.",
+          "She is Julia. → She's Julia."
+        ]
+      },
+      {
+        "type": "pronunciation",
+        "title": "Pronunciación",
+        "instruction": "Escucha y repite sin separar las palabras. Dilo como una sola unidad.",
+        "items": [
+          "I'm Daniel.",
+          "You're Anna.",
+          "He's Marco.",
+          "She's Julia."
+        ],
+        "note": "❌ I — am — Daniel.   ✅ I'm Daniel."
+      },
+      {
+        "type": "repeat",
+        "title": "Preguntar el nombre",
+        "instruction": "Escucha y repite. Pregunta a un compañero y responde con tu nombre.",
+        "items": [
+          "What's your name?",
+          "I'm Sofia."
+        ]
+      },
+      {
+        "type": "repeat",
+        "title": "País",
+        "instruction": "Escucha y repite. Después di de dónde eres: I'm from _____.",
+        "items": [
+          "I'm from Peru.",
+          "I'm from Mexico.",
+          "I'm from Spain.",
+          "I'm from Brazil."
+        ]
+      },
+      {
+        "type": "repeat",
+        "title": "Preguntar el país",
+        "instruction": "Escucha y repite. Pregunta a un compañero y escucha su respuesta.",
+        "items": [
+          "Where are you from?",
+          "I'm from Peru."
+        ]
+      },
+      {
+        "type": "vocab2",
+        "title": "Nacionalidad",
+        "instruction": "Observa. Después di tu nacionalidad.",
+        "pairs": [
+          [
+            "Peru",
+            "Peruvian"
+          ],
+          [
+            "Mexico",
+            "Mexican"
+          ],
+          [
+            "Brazil",
+            "Brazilian"
+          ],
+          [
+            "Spain",
+            "Spanish"
+          ],
+          [
+            "China",
+            "Chinese"
+          ],
+          [
+            "Italy",
+            "Italian"
+          ]
+        ],
+        "example": "I'm Peruvian."
+      },
+      {
+        "type": "practice",
+        "title": "País vs nacionalidad",
+        "instruction": "Observa la diferencia y luego di las dos frases con tu información.",
+        "items": [
+          "I'm from Peru. ✅",
+          "I'm Peruvian. ✅",
+          "I'm from Peruvian. ❌",
+          "I'm from _____.",
+          "I'm _____."
+        ]
+      },
+      {
+        "type": "vocab",
+        "title": "Ocupaciones",
         "items": [
           [
-            "Hello!",
+            "student",
+            "",
             ""
           ],
           [
-            "What’s your name?",
+            "teacher",
+            "",
             ""
           ],
           [
-            "My name is Anna.",
+            "engineer",
+            "",
             ""
           ],
           [
-            "Nice to meet you.",
+            "doctor",
+            "",
             ""
           ],
           [
-            "How are you?",
+            "manager",
+            "",
             ""
+          ]
+        ],
+        "instruction": "Escucha y repite. Luego di a qué te dedicas: I'm a/an _____.",
+        "examples": [
+          "I'm a teacher.",
+          "I'm an engineer."
+        ]
+      },
+      {
+        "type": "pattern",
+        "title": "A / AN",
+        "instruction": "Observa y completa oralmente.",
+        "items": [
+          "a teacher",
+          "a student",
+          "a doctor",
+          "an engineer"
+        ],
+        "task": "Completa: I'm ___ teacher. / I'm ___ engineer.",
+        "answer": "I'm a teacher. / I'm an engineer."
+      },
+      {
+        "type": "practice",
+        "title": "Presentar a otra persona",
+        "instruction": "Presenta a una persona usando tres frases.",
+        "items": [
+          "He's Marco.",
+          "He's Italian.",
+          "He's an engineer.",
+          "She's Anna.",
+          "She's Spanish.",
+          "She's a teacher."
+        ]
+      },
+      {
+        "type": "pattern",
+        "title": "Negación",
+        "instruction": "Observa. Después cambia la frase a negativo.",
+        "items": [
+          "I'm a teacher. → I'm not a teacher.",
+          "He's not a doctor.",
+          "She's not Italian."
+        ],
+        "task": "I'm a student. → ?",
+        "answer": "I'm not a student."
+      },
+      {
+        "type": "pattern",
+        "title": "Preguntas con ARE",
+        "instruction": "Observa. Después pregunta y responde.",
+        "items": [
+          "You're a teacher. → Are you a teacher?",
+          "Yes, I am.",
+          "No, I'm not."
+        ]
+      },
+      {
+        "type": "pattern",
+        "title": "Preguntas con IS",
+        "instruction": "Observa y responde oralmente.",
+        "items": [
+          "Is he a teacher?",
+          "Yes, he is.",
+          "No, he isn't.",
+          "Is she Italian?",
+          "Yes, she is.",
+          "No, she isn't."
+        ]
+      },
+      {
+        "type": "mcq_set",
+        "title": "Elige la forma correcta",
+        "instruction": "Elige la opción correcta.",
+        "questions": [
+          {
+            "q": "___ Peruvian.",
+            "options": [
+              "I am",
+              "I is"
+            ],
+            "answer": "I am"
+          },
+          {
+            "q": "___ a teacher.",
+            "options": [
+              "She is",
+              "She are"
+            ],
+            "answer": "She is"
+          },
+          {
+            "q": "___ an engineer.",
+            "options": [
+              "He am",
+              "He is"
+            ],
+            "answer": "He is"
+          },
+          {
+            "q": "___ a student.",
+            "options": [
+              "You is",
+              "You are"
+            ],
+            "answer": "You are"
+          }
+        ]
+      },
+      {
+        "type": "correction",
+        "title": "Corrige el error",
+        "instruction": "Corrige las frases oralmente.",
+        "items": [
+          [
+            "I is Carlos.",
+            "I'm Carlos."
           ],
           [
-            "I’m fine, thank you.",
-            ""
+            "She are Mexican.",
+            "She's Mexican."
           ],
           [
-            "Goodbye!",
-            ""
+            "I from Peru.",
+            "I'm from Peru."
+          ],
+          [
+            "I'm engineer.",
+            "I'm an engineer."
           ]
         ]
       },
       {
         "type": "dialogue",
-        "title": "Mini Dialogue",
+        "title": "Conversación modelo",
+        "instruction": "Lee el diálogo con un compañero. Cambien los datos y repitan.",
         "lines": [
           [
             "A",
-            "Hi! My name is Emma. What’s your name?"
+            "Hi! What's your name?"
           ],
           [
             "B",
-            "I’m Daniel. Nice to meet you."
+            "I'm Laura. What's your name?"
           ],
           [
             "A",
-            "Nice to meet you, too. How are you?"
+            "I'm David. Where are you from?"
           ],
           [
             "B",
-            "I’m fine, thank you."
+            "I'm from Peru. And you?"
+          ],
+          [
+            "A",
+            "I'm from Mexico. Are you a student?"
+          ],
+          [
+            "B",
+            "Yes, I am. And you?"
+          ],
+          [
+            "A",
+            "No, I'm not. I'm an engineer."
           ]
         ]
       },
       {
-        "type": "grammar",
-        "title": "Grammar Focus",
-        "items": [
-          "Verb to be: I / you",
-          "I am → I’m; You are → You’re",
-          "Negative: I’m not / You aren’t",
-          "Questions: Are you…?",
-          "Short answers",
-          "What’s your name?"
+        "type": "speaking",
+        "title": "Construye tu perfil",
+        "instruction": "Completa oralmente. Después de practicarlo, habla sin leer.",
+        "questions": [
+          "Hi! I'm _____.",
+          "I'm from _____.",
+          "I'm _____.",
+          "I'm a/an _____."
         ]
       },
       {
         "type": "speaking",
-        "title": "Speaking Practice",
+        "title": "Entrevista",
+        "instruction": "Haz estas preguntas a un compañero. Escucha y recuerda la información.",
         "questions": [
-          "Respond to greetings.",
-          "Answer What’s your name? and How are you?",
-          "Role-play a first meeting.",
-          "Challenge: 5–6 turn conversation."
+          "What's your name?",
+          "Where are you from?",
+          "Are you a student?",
+          "Are you a teacher?"
         ]
       },
       {
-        "type": "listening",
-        "title": "Listening",
-        "headline": "Meeting Someone New",
-        "audio": "Hi, I’m Sophie. Nice to meet you. Hi Sophie, I’m Alex. Nice to meet you too. How are you? I’m fine, thanks.",
-        "tasks": [
-          "First listening: understand the main idea.",
-          "Second listening: identify specific information.",
-          "Answer detail questions.",
-          "Listen again and notice key language.",
-          "Post-listening: retell or respond orally."
-        ]
+        "type": "speaking",
+        "title": "Presenta a tu compañero",
+        "instruction": "Presenta a la persona que entrevistaste. Habla sin leer.",
+        "questions": [
+          "He's/She's _____.",
+          "He's/She's from _____.",
+          "He's/She's _____.",
+          "He's/She's a/an _____."
+        ],
+        "model": "He's Carlos. He's from Peru. He's Peruvian. He's an engineer."
       },
       {
-        "type": "quick",
-        "title": "Quick Practice",
-        "items": [
-          "Vocabulary check: hello.",
-          "Complete a key sentence.",
-          "Choose the correct grammar form.",
-          "Build or correct a sentence.",
-          "Personal response / speaking check."
+        "type": "speaking",
+        "title": "Producción libre",
+        "instruction": "Conoce a una persona nueva durante 1–2 minutos. No leas un diálogo.",
+        "questions": [
+          "Saluda.",
+          "Pregunta su nombre.",
+          "Pregunta de dónde es.",
+          "Pregunta por su ocupación.",
+          "Responde sus preguntas."
         ]
       },
       {
         "type": "review",
-        "title": "Lesson Review",
+        "title": "Lo que aprendiste",
         "items": [
-          "I can use key vocabulary for introductions & greetings.",
-          "I can understand and use the unit’s key sentences.",
-          "I can use the main grammar in simple communication.",
-          "I can understand the unit listening.",
-          "I can speak about the unit topic.",
-          "Final speaking challenge: use the unit language without reading the model dialogue."
+          "I'm Daniel.",
+          "I'm from Peru.",
+          "I'm Peruvian.",
+          "I'm an engineer.",
+          "What's your name?",
+          "Where are you from?",
+          "Are you a student?",
+          "He's… / She's…"
+        ]
+      },
+      {
+        "type": "final_challenge",
+        "title": "Reto final",
+        "instruction": "Habla durante 1 minuto sin leer.",
+        "items": [
+          "Preséntate.",
+          "Di de dónde eres.",
+          "Di tu nacionalidad.",
+          "Di tu ocupación.",
+          "Presenta a otra persona."
         ]
       }
     ],
