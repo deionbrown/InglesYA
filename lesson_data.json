@@ -31,167 +31,363 @@
     "Travel",
     "Final A1 Review"
   ],
-  "slides": [
-    {
-      "type": "warmup",
-      "title": "Warm-up",
-      "image": "unit1_warmup_greeting.jpg",
-      "headline": "Hello!",
-      "ipa": "/həˈloʊ/",
-      "note": "Use the picture first. Ask the questions, then model “Hello!”, “Hi!”, and “I’m …” with your student.",
-      "questions": [
-        "Who are these people?",
-        "Where do you think they are?",
-        "What are they doing?",
-        "What do you say when you meet someone?"
-      ],
-      "goal": "Start a simple conversation and introduce yourself in English."
-    },
-    {
-      "type": "vocab",
-      "title": "Key Vocabulary",
-      "image": "hello_real.jpg",
-      "items": [
-        [
-          "hello",
-          "/həˈloʊ/",
-          "hola"
+  "unit_slides": {
+    "1": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "image": "unit1_warmup_greeting.jpg",
+        "headline": "Hello!",
+        "ipa": "/həˈloʊ/",
+        "note": "Use the picture first. Ask the questions, then model “Hello!”, “Hi!”, and “I’m …” with your student.",
+        "questions": [
+          "Who are these people?",
+          "Where do you think they are?",
+          "What are they doing?",
+          "What do you say when you meet someone?"
         ],
-        [
-          "hi",
-          "/haɪ/",
-          "hola"
-        ],
-        [
-          "name",
-          "/neɪm/",
-          "nombre"
-        ],
-        [
-          "my",
-          "/maɪ/",
-          "mi"
-        ],
-        [
-          "your",
-          "/jʊr/",
-          "tu / su"
-        ],
-        [
-          "nice",
-          "/naɪs/",
-          "agradable"
-        ],
-        [
-          "meet",
-          "/miːt/",
-          "conocer"
-        ],
-        [
-          "you",
-          "/juː/",
-          "tú / usted"
+        "goal": "Start a simple conversation and introduce yourself in English."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "image": "hello_real.jpg",
+        "items": [
+          [
+            "hello",
+            "/həˈloʊ/",
+            "hola"
+          ],
+          [
+            "hi",
+            "/haɪ/",
+            "hola"
+          ],
+          [
+            "name",
+            "/neɪm/",
+            "nombre"
+          ],
+          [
+            "my",
+            "/maɪ/",
+            "mi"
+          ],
+          [
+            "your",
+            "/jʊr/",
+            "tu / su"
+          ],
+          [
+            "nice",
+            "/naɪs/",
+            "agradable"
+          ],
+          [
+            "meet",
+            "/miːt/",
+            "conocer"
+          ],
+          [
+            "you",
+            "/juː/",
+            "tú / usted"
+          ]
         ]
-      ]
-    },
-    {
-      "type": "sentences",
-      "title": "Key Sentences",
-      "image": "sentences_real.jpg",
-      "items": [
-        [
-          "My name is Anna.",
-          "Me llamo Anna."
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "image": "sentences_real.jpg",
+        "items": [
+          [
+            "My name is Anna.",
+            "Me llamo Anna."
+          ],
+          [
+            "What’s your name?",
+            "¿Cómo te llamas?"
+          ],
+          [
+            "I’m Daniel.",
+            "Soy Daniel."
+          ],
+          [
+            "Nice to meet you.",
+            "Mucho gusto."
+          ],
+          [
+            "Nice to meet you, too.",
+            "Mucho gusto también."
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "image": "dialogue_real.jpg",
+        "lines": [
+          [
+            "A",
+            "Hello! My name is Anna."
+          ],
+          [
+            "B",
+            "Hi! I’m Leo."
+          ],
+          [
+            "A",
+            "Nice to meet you, Leo."
+          ],
+          [
+            "B",
+            "Nice to meet you, too."
+          ]
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "image": "listening_real.jpg",
+        "audio": "Hello! My name is Emma. Nice to meet you.",
+        "question": "What is the girl’s name?",
+        "options": [
+          "Anna",
+          "Emma",
+          "Laura"
         ],
-        [
+        "answer": "Emma"
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "image": "speaking_real.jpg",
+        "questions": [
           "What’s your name?",
-          "¿Cómo te llamas?"
-        ],
-        [
-          "I’m Daniel.",
-          "Soy Daniel."
-        ],
-        [
+          "Can you say: My name is ___?",
+          "How do you greet someone in the morning?",
+          "What do you say after someone introduces themselves?",
+          "Introduce yourself in two sentences."
+        ]
+      },
+      {
+        "type": "quiz",
+        "title": "Quick Practice",
+        "image": "practice_real.jpg",
+        "question": "A: Hello! My name is Sofia.\nB: __________",
+        "options": [
           "Nice to meet you.",
-          "Mucho gusto."
+          "I am ten years old.",
+          "It is Monday."
         ],
-        [
-          "Nice to meet you, too.",
-          "Mucho gusto también."
+        "answer": "Nice to meet you."
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "image": "review_real.jpg",
+        "items": [
+          "I can say Hello / Hi.",
+          "I can say my name.",
+          "I can ask: What’s your name?",
+          "I can say: Nice to meet you.",
+          "I can do a short introduction dialogue."
         ]
-      ]
-    },
-    {
-      "type": "dialogue",
-      "title": "Mini Dialogue",
-      "image": "dialogue_real.jpg",
-      "lines": [
-        [
-          "A",
-          "Hello! My name is Anna."
+      }
+    ],
+    "2": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "image": "unit2_personal_info.jpg",
+        "headline": "Personal Information",
+        "ipa": "/ˈpɝː.sən.əl ˌɪn.fɚˈmeɪ.ʃən/",
+        "note": "Use the picture to introduce personal information. Ask the student what information people usually share when they meet.",
+        "questions": [
+          "What information can you see?",
+          "What is the person’s name?",
+          "What personal information do you know about yourself?",
+          "What questions can you ask someone new?"
         ],
-        [
-          "B",
-          "Hi! I’m Leo."
-        ],
-        [
-          "A",
-          "Nice to meet you, Leo."
-        ],
-        [
-          "B",
-          "Nice to meet you, too."
+        "goal": "Ask and answer simple questions about name, age, country, city and occupation."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "image": "unit2_personal_info.jpg",
+        "items": [
+          [
+            "first name",
+            "/ˈfɝːst ˌneɪm/",
+            "nombre"
+          ],
+          [
+            "last name",
+            "/ˈlæst ˌneɪm/",
+            "apellido"
+          ],
+          [
+            "age",
+            "/eɪdʒ/",
+            "edad"
+          ],
+          [
+            "country",
+            "/ˈkʌn.tri/",
+            "país"
+          ],
+          [
+            "city",
+            "/ˈsɪt.i/",
+            "ciudad"
+          ],
+          [
+            "address",
+            "/əˈdres/",
+            "dirección"
+          ],
+          [
+            "phone number",
+            "/ˈfoʊn ˌnʌm.bɚ/",
+            "número de teléfono"
+          ],
+          [
+            "job",
+            "/dʒɑːb/",
+            "trabajo / ocupación"
+          ]
         ]
-      ]
-    },
-    {
-      "type": "listening",
-      "title": "Listening",
-      "image": "listening_real.jpg",
-      "audio": "Hello! My name is Emma. Nice to meet you.",
-      "question": "What is the girl’s name?",
-      "options": [
-        "Anna",
-        "Emma",
-        "Laura"
-      ],
-      "answer": "Emma"
-    },
-    {
-      "type": "speaking",
-      "title": "Speaking Practice",
-      "image": "speaking_real.jpg",
-      "questions": [
-        "What’s your name?",
-        "Can you say: My name is ___?",
-        "How do you greet someone in the morning?",
-        "What do you say after someone introduces themselves?",
-        "Introduce yourself in two sentences."
-      ]
-    },
-    {
-      "type": "quiz",
-      "title": "Quick Practice",
-      "image": "practice_real.jpg",
-      "question": "A: Hello! My name is Sofia.\nB: __________",
-      "options": [
-        "Nice to meet you.",
-        "I am ten years old.",
-        "It is Monday."
-      ],
-      "answer": "Nice to meet you."
-    },
-    {
-      "type": "review",
-      "title": "Lesson Review",
-      "image": "review_real.jpg",
-      "items": [
-        "I can say Hello / Hi.",
-        "I can say my name.",
-        "I can ask: What’s your name?",
-        "I can say: Nice to meet you.",
-        "I can do a short introduction dialogue."
-      ]
-    }
-  ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "image": "unit2_personal_info.jpg",
+        "items": [
+          [
+            "What’s your first name?",
+            "¿Cuál es tu nombre?"
+          ],
+          [
+            "My first name is Emma.",
+            "Mi nombre es Emma."
+          ],
+          [
+            "How old are you?",
+            "¿Cuántos años tienes?"
+          ],
+          [
+            "I’m 20 years old.",
+            "Tengo 20 años."
+          ],
+          [
+            "Where are you from?",
+            "¿De dónde eres?"
+          ],
+          [
+            "I’m from Peru.",
+            "Soy de Perú."
+          ],
+          [
+            "What city do you live in?",
+            "¿En qué ciudad vives?"
+          ],
+          [
+            "What do you do?",
+            "¿A qué te dedicas?"
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "image": "unit2_personal_info.jpg",
+        "lines": [
+          [
+            "A",
+            "Hi! What’s your name?"
+          ],
+          [
+            "B",
+            "My name is Emma."
+          ],
+          [
+            "A",
+            "How old are you?"
+          ],
+          [
+            "B",
+            "I’m twenty years old."
+          ],
+          [
+            "A",
+            "Where are you from?"
+          ],
+          [
+            "B",
+            "I’m from Peru."
+          ],
+          [
+            "A",
+            "What do you do?"
+          ],
+          [
+            "B",
+            "I’m a student."
+          ]
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "image": "unit2_personal_info.jpg",
+        "audio": "Hi. My name is Daniel. I am twenty five years old. I am from Peru and I live in Lima. I am a teacher.",
+        "question": "Where does Daniel live?",
+        "options": [
+          "Cusco",
+          "Lima",
+          "Arequipa"
+        ],
+        "answer": "Lima"
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "image": "unit2_personal_info.jpg",
+        "questions": [
+          "What’s your first name?",
+          "What’s your last name?",
+          "How old are you?",
+          "Where are you from?",
+          "What city do you live in?",
+          "What do you do?",
+          "Can you introduce yourself using four sentences?"
+        ]
+      },
+      {
+        "type": "quiz",
+        "title": "Quick Practice",
+        "image": "unit2_personal_info.jpg",
+        "question": "A: Where are you from?\nB: __________",
+        "options": [
+          "I’m from Peru.",
+          "I’m twenty years old.",
+          "My name is Ana."
+        ],
+        "answer": "I’m from Peru."
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "image": "unit2_personal_info.jpg",
+        "items": [
+          "I can say my first and last name.",
+          "I can say my age.",
+          "I can say where I am from.",
+          "I can say where I live.",
+          "I can say my occupation.",
+          "I can ask another person for basic personal information."
+        ]
+      }
+    ]
+  }
 }
