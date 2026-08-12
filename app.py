@@ -625,6 +625,7 @@ UNIT_COVER_IMAGES = {
     1: "unit_01_introductions_greetings.png",
     2: "unit_02_personal_information.png",
     3: "unit_03_countries_nationalities_languages.png",
+    4: "unit_04_family_people.png",
 }
 if idx == 0:
     cover_name = UNIT_COVER_IMAGES.get(st.session_state.unit)
