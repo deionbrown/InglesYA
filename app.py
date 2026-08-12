@@ -623,6 +623,7 @@ st.markdown(f'<div class="title">{s["title"]}</div>',unsafe_allow_html=True)
 # Unit cover image: shown only at the beginning of the unit (Warm-up)
 UNIT_COVER_IMAGES = {
     1: "unit_01_introductions_greetings.png",
+    2: "unit_02_personal_information.png",
 }
 if idx == 0:
     cover_name = UNIT_COVER_IMAGES.get(st.session_state.unit)
