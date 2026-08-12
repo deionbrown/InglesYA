@@ -436,6 +436,13 @@ def play(text,key,label="🔊 Listen"):
         except Exception: st.warning("Audio unavailable right now.")
 
 
+def optional_translation(slide, text, key):
+    tr=(slide.get("translations") or {}).get(text)
+    if tr:
+        with st.expander("🇪🇸 Ver traducción", expanded=False):
+            st.markdown(f"**{tr}**")
+
+
 # ============================================================
 # LOGIN SCREEN
 # ============================================================
@@ -649,7 +656,9 @@ elif t in ("repeat","pattern","practice","pronunciation"):
     if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
     for i,item in enumerate(s.get("items",[])):
         a,b=st.columns([5,1])
-        with a: st.markdown(f'<div class="row"><b>{item}</b></div>', unsafe_allow_html=True)
+        with a:
+            st.markdown(f'<div class="row"><b>{item}</b></div>', unsafe_allow_html=True)
+            optional_translation(s,item,f"tr_x_{idx}_{i}")
         with b: play(item,f"x_{idx}_{i}")
     if s.get("note"): st.markdown(f'<div class="tip">{s["note"]}</div>', unsafe_allow_html=True)
     if s.get("task"): st.markdown(f'<div class="goal-card"><b>👉 Ahora tú</b><br>{s["task"]}</div>', unsafe_allow_html=True)
@@ -667,6 +676,7 @@ elif t=="vocab2":
     st.table([{"País":a,"Nacionalidad":b} for a,b in s.get("pairs",[])])
     if s.get("example"):
         st.markdown(f'<div class="goal-card"><b>Ejemplo:</b> {s["example"]}</div>', unsafe_allow_html=True)
+        optional_translation(s,s["example"],f"tr_v2_{idx}")
         play(s["example"],f"v2_{idx}")
 
 elif t=="mcq_set":
@@ -680,9 +690,12 @@ elif t=="mcq_set":
 
 elif t=="correction":
     if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
-    for wrong,right in s.get("items",[]):
+    for i,(wrong,right) in enumerate(s.get("items",[])):
         st.markdown(f'<div class="row">❌ <b>{wrong}</b></div>', unsafe_allow_html=True)
-        with st.expander("Ver corrección"): st.write(f'✅ {right}')
+        optional_translation(s,wrong,f"tr_wrong_{idx}_{i}")
+        with st.expander("Ver corrección"):
+            st.write(f'✅ {right}')
+            optional_translation(s,right,f"tr_right_{idx}_{i}")
 
 elif t=="final_challenge":
     st.markdown(f'<div class="goal-card"><b>🏁 {s.get("instruction","")}</b></div>', unsafe_allow_html=True)
@@ -738,7 +751,9 @@ elif t=="dialogue":
     for i,(who,line) in enumerate(s["lines"]):
         full.append(line)
         a,b=st.columns([5,1])
-        with a: st.markdown(f'<div class="row"><b style="color:{C["accent"]}">{who}:</b> {line}</div>',unsafe_allow_html=True)
+        with a:
+            st.markdown(f'<div class="row"><b style="color:{C["accent"]}">{who}:</b> {line}</div>',unsafe_allow_html=True)
+            optional_translation(s,line,f"tr_d_{idx}_{i}")
         with b: play(line,f"d{i}")
     play(" ".join(full),"dfull","▶ Play full dialogue")
 
@@ -776,9 +791,11 @@ elif t=="speaking":
         st.markdown(f'<div class="tip"><b>Teacher instruction:</b> {s["instruction"]}</div>',unsafe_allow_html=True)
     for i,q in enumerate(s.get("questions",[]),1):
         st.markdown(f'<div class="row"><b>{i}.</b> {q}</div>',unsafe_allow_html=True)
+        optional_translation(s,q,f"tr_sp_{idx}_{i}")
     if s.get("model"):
         with st.expander("Model answer"):
             st.write(s["model"])
+            optional_translation(s,s["model"],f"tr_model_{idx}")
 
 elif t=="quiz":
     st.subheader(s["question"])
@@ -804,7 +821,9 @@ elif t=="quick":
 
 elif t=="review":
     st.markdown("## 🎉 You did it!")
-    for item in s["items"]: st.markdown(f"✅ **{item}**")
+    for i,item in enumerate(s["items"]):
+        st.markdown(f"✅ **{item}**")
+        optional_translation(s,item,f"tr_rev_{idx}_{i}")
 
 st.markdown("</div>",unsafe_allow_html=True)
 
