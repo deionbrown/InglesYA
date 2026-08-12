@@ -555,7 +555,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v16</div>
+      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v17 · ACADSOC-style flow</div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -645,15 +645,42 @@ elif t=="dialogue":
     play(" ".join(full),"dfull","▶ Play full dialogue")
 
 elif t=="listening":
-    play(s["audio"],"listen","▶ Play listening")
-    st.subheader(s["question"])
-    ch=st.radio("Choose one:",s["options"],key="lc")
-    if st.button("Check answer",key="lcheck"):
-        st.success("Correct! ✓") if ch==s["answer"] else st.error(f"Correct answer: {s['answer']}")
+    # ACADSOC-style listening: listen first, then complete comprehension tasks.
+    audio_text = s.get("audio") or s.get("text") or s.get("script") or ""
+    if audio_text:
+        play(audio_text,"listen","▶ Play listening")
+
+    st.markdown(f"### {s.get('headline','Listen and understand')}")
+    if s.get("instruction"):
+        st.markdown(f'<div class="tip">🎧 <b>Task:</b> {s["instruction"]}</div>', unsafe_allow_html=True)
+
+    # Multiple-choice comprehension format
+    if s.get("question") and s.get("options"):
+        st.subheader(s["question"])
+        ch=st.radio("Choose one:",s["options"],key=f"lc_{st.session_state.unit}_{idx}")
+        if st.button("Check answer",key=f"lcheck_{st.session_state.unit}_{idx}"):
+            answer=s.get("answer")
+            st.success("Correct! ✓") if ch==answer else st.error(f"Correct answer: {answer}")
+
+    # Teacher-led listening tasks format
+    for i,item in enumerate(s.get("tasks",[]),1):
+        st.markdown(f'<div class="row"><b>{i}.</b> {item}</div>',unsafe_allow_html=True)
+
+    # Optional script/transcript reveal for teacher support
+    transcript=s.get("transcript")
+    if transcript:
+        with st.expander("Teacher transcript"):
+            st.write(transcript)
 
 elif t=="speaking":
-    st.markdown("### Speaking time")
-    for i,q in enumerate(s["questions"],1): st.markdown(f"**{i}. {q}**")
+    st.markdown("### 🗣️ Speaking Practice")
+    if s.get("instruction"):
+        st.markdown(f'<div class="tip"><b>Teacher instruction:</b> {s["instruction"]}</div>',unsafe_allow_html=True)
+    for i,q in enumerate(s.get("questions",[]),1):
+        st.markdown(f'<div class="row"><b>{i}.</b> {q}</div>',unsafe_allow_html=True)
+    if s.get("model"):
+        with st.expander("Model answer"):
+            st.write(s["model"])
 
 elif t=="quiz":
     st.subheader(s["question"])
@@ -663,14 +690,14 @@ elif t=="quiz":
 
 elif t=="grammar":
     st.markdown("### Grammar Focus")
+    if s.get("explanation"):
+        st.markdown(f'<div class="tip">{s["explanation"]}</div>',unsafe_allow_html=True)
     for i,item in enumerate(s.get("items",[]),1):
         st.markdown(f'<div class="row"><b>{i}.</b> {item}</div>',unsafe_allow_html=True)
-
-elif t=="listening":
-    play(s["audio"],"listen","▶ Play listening")
-    st.markdown(f"### {s.get('headline','Listening')}")
-    for i,item in enumerate(s.get("tasks",[]),1):
-        st.markdown(f"**{i}. {item}**")
+    if s.get("examples"):
+        st.markdown("#### Examples")
+        for ex in s["examples"]:
+            st.markdown(f'<div class="row">• {ex}</div>',unsafe_allow_html=True)
 
 elif t=="quick":
     st.markdown("### Quick Practice")
