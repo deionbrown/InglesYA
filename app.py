@@ -81,6 +81,13 @@ C=DARK if st.session_state.theme=="Dark" else LIGHT
 shadow = "0 8px 24px rgba(20, 31, 50, 0.08)" if st.session_state.theme=="Light" else "none"
 inner_shadow = "0 3px 12px rgba(20, 31, 50, 0.06)" if st.session_state.theme=="Light" else "none"
 
+
+secondary_bg = "#F7F9FC" if st.session_state.theme=="Light" else "#222B3B"
+secondary_text = "#172033" if st.session_state.theme=="Light" else "#F8FAFC"
+secondary_border = "#D7DEE8" if st.session_state.theme=="Light" else "#344157"
+secondary_hover = "#EEF2F7" if st.session_state.theme=="Light" else "#2B3649"
+secondary_shadow = "0 2px 8px rgba(20,31,50,.06)" if st.session_state.theme=="Light" else "none"
+
 st.markdown(f"""
 <style>
 .stApp{{
@@ -381,6 +388,34 @@ div[data-testid="stExpander"] summary svg {{
     fill: #172033 !important;
 }}
 
+
+/* Sidebar unit buttons: light/dark theme aware */
+[data-testid="stSidebar"] .stButton > button[kind="secondary"] {{
+    background: {secondary_bg} !important;
+    color: {secondary_text} !important;
+    border: 1px solid {secondary_border} !important;
+    box-shadow: {secondary_shadow} !important;
+}}
+
+[data-testid="stSidebar"] .stButton > button[kind="secondary"]:hover {{
+    background: {secondary_hover} !important;
+    color: {secondary_text} !important;
+    border-color: {secondary_border} !important;
+}}
+
+[data-testid="stSidebar"] .stButton > button[kind="primary"] {{
+    background: #ED1C24 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #ED1C24 !important;
+    box-shadow: 0 4px 12px rgba(237,28,36,.16) !important;
+}}
+
+[data-testid="stSidebar"] .stButton > button[kind="primary"]:hover {{
+    background: #D71920 !important;
+    color: #FFFFFF !important;
+    border-color: #D71920 !important;
+}}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -555,7 +590,7 @@ st.sidebar.markdown(
     f"""
     <div class="brand-wrap">
       <div class="brand-name">Inglés ¡YA!</div>
-      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v17 · ACADSOC-style flow</div>
+      <div class="brand-sub">English A1 Teacher Studio · A1 16 Units · v18 · ACADSOC-style flow · Light/Dark UI fix</div>
     </div>
     """,
     unsafe_allow_html=True,
