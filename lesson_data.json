@@ -1,197 +1,229 @@
 {
   "units": [
-    "Introductions",
+    "Introductions & Greetings",
     "Personal Information",
-    "Countries & Nationalities",
-    "Family",
-    "Numbers & Age",
+    "Countries, Nationalities & Languages",
+    "Family & People",
+    "Numbers, Dates & Birthdays",
     "Daily Routine",
-    "Time",
-    "Days & Dates",
-    "Home",
+    "Time & Schedules",
+    "Home & Furniture",
     "Food & Drinks",
     "At a Restaurant",
-    "Shopping",
-    "Clothes",
-    "Likes & Dislikes",
-    "Hobbies",
-    "Work",
-    "School",
-    "Places in Town",
-    "Directions",
-    "Transportation",
-    "Weather",
-    "Body",
-    "Health",
-    "Describing People",
-    "Present Continuous",
-    "Past Events",
-    "Future Plans",
-    "Invitations",
-    "Travel",
-    "Final A1 Review"
+    "Shopping & Prices",
+    "Clothes & Appearance",
+    "Free Time, Hobbies & Likes",
+    "Places in Town & Directions",
+    "Weather & Seasons",
+    "Health & Basic Needs"
   ],
   "unit_slides": {
     "1": [
       {
         "type": "warmup",
         "title": "Warm-up",
-        "image": "unit1_warmup_greeting.jpg",
-        "headline": "Hello!",
-        "ipa": "/həˈloʊ/",
-        "note": "Use the picture first. Ask the questions, then model “Hello!”, “Hi!”, and “I’m …” with your student.",
+        "headline": "Meet & Greet",
+        "note": "Look, think and talk about greetings, names and first meetings.",
         "questions": [
-          "Who are these people?",
-          "Where do you think they are?",
-          "What are they doing?",
-          "What do you say when you meet someone?"
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
         ],
-        "goal": "Start a simple conversation and introduce yourself in English."
+        "goal": "Start communicating about introductions & greetings."
       },
       {
         "type": "vocab",
         "title": "Key Vocabulary",
-        "image": "hello_real.jpg",
         "items": [
           [
             "hello",
-            "/həˈloʊ/",
-            "hola"
+            "",
+            ""
           ],
           [
             "hi",
-            "/haɪ/",
-            "hola"
+            "",
+            ""
+          ],
+          [
+            "good morning",
+            "",
+            ""
+          ],
+          [
+            "good afternoon",
+            "",
+            ""
+          ],
+          [
+            "good evening",
+            "",
+            ""
+          ],
+          [
+            "goodbye",
+            "",
+            ""
+          ],
+          [
+            "bye",
+            "",
+            ""
           ],
           [
             "name",
-            "/neɪm/",
-            "nombre"
+            "",
+            ""
           ],
           [
-            "my",
-            "/maɪ/",
-            "mi"
+            "first name",
+            "",
+            ""
           ],
           [
-            "your",
-            "/jʊr/",
-            "tu / su"
-          ],
-          [
-            "nice",
-            "/naɪs/",
-            "agradable"
+            "last name",
+            "",
+            ""
           ],
           [
             "meet",
-            "/miːt/",
-            "conocer"
+            "",
+            ""
           ],
           [
-            "you",
-            "/juː/",
-            "tú / usted"
+            "nice",
+            "",
+            ""
+          ],
+          [
+            "please",
+            "",
+            ""
+          ],
+          [
+            "thank you",
+            "",
+            ""
+          ],
+          [
+            "welcome",
+            "",
+            ""
           ]
         ]
       },
       {
         "type": "sentences",
         "title": "Key Sentences",
-        "image": "sentences_real.jpg",
         "items": [
           [
-            "My name is Anna.",
-            "Me llamo Anna."
+            "Hello!",
+            ""
           ],
           [
             "What’s your name?",
-            "¿Cómo te llamas?"
+            ""
           ],
           [
-            "I’m Daniel.",
-            "Soy Daniel."
+            "My name is Anna.",
+            ""
           ],
           [
             "Nice to meet you.",
-            "Mucho gusto."
+            ""
           ],
           [
-            "Nice to meet you, too.",
-            "Mucho gusto también."
+            "How are you?",
+            ""
+          ],
+          [
+            "I’m fine, thank you.",
+            ""
+          ],
+          [
+            "Goodbye!",
+            ""
           ]
         ]
       },
       {
         "type": "dialogue",
         "title": "Mini Dialogue",
-        "image": "dialogue_real.jpg",
         "lines": [
           [
             "A",
-            "Hello! My name is Anna."
+            "Hi! My name is Emma. What’s your name?"
           ],
           [
             "B",
-            "Hi! I’m Leo."
+            "I’m Daniel. Nice to meet you."
           ],
           [
             "A",
-            "Nice to meet you, Leo."
+            "Nice to meet you, too. How are you?"
           ],
           [
             "B",
-            "Nice to meet you, too."
+            "I’m fine, thank you."
           ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Verb to be: I / you",
+          "I am → I’m; You are → You’re",
+          "Negative: I’m not / You aren’t",
+          "Questions: Are you…?",
+          "Short answers",
+          "What’s your name?"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Respond to greetings.",
+          "Answer What’s your name? and How are you?",
+          "Role-play a first meeting.",
+          "Challenge: 5–6 turn conversation."
         ]
       },
       {
         "type": "listening",
         "title": "Listening",
-        "image": "listening_real.jpg",
-        "audio": "Hello! My name is Emma. Nice to meet you.",
-        "question": "What is the girl’s name?",
-        "options": [
-          "Anna",
-          "Emma",
-          "Laura"
-        ],
-        "answer": "Emma"
-      },
-      {
-        "type": "speaking",
-        "title": "Speaking Practice",
-        "image": "speaking_real.jpg",
-        "questions": [
-          "What’s your name?",
-          "Can you say: My name is ___?",
-          "How do you greet someone in the morning?",
-          "What do you say after someone introduces themselves?",
-          "Introduce yourself in two sentences."
+        "headline": "Meeting Someone New",
+        "audio": "Hi, I’m Sophie. Nice to meet you. Hi Sophie, I’m Alex. Nice to meet you too. How are you? I’m fine, thanks.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
         ]
       },
       {
-        "type": "quiz",
+        "type": "quick",
         "title": "Quick Practice",
-        "image": "practice_real.jpg",
-        "question": "A: Hello! My name is Sofia.\nB: __________",
-        "options": [
-          "Nice to meet you.",
-          "I am ten years old.",
-          "It is Monday."
-        ],
-        "answer": "Nice to meet you."
+        "items": [
+          "Vocabulary check: hello.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
       },
       {
         "type": "review",
         "title": "Lesson Review",
-        "image": "review_real.jpg",
         "items": [
-          "I can say Hello / Hi.",
-          "I can say my name.",
-          "I can ask: What’s your name?",
-          "I can say: Nice to meet you.",
-          "I can do a short introduction dialogue."
+          "I can use key vocabulary for introductions & greetings.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
         ]
       }
     ],
@@ -199,116 +231,149 @@
       {
         "type": "warmup",
         "title": "Warm-up",
-        "image": "unit2_personal_info.jpg",
-        "headline": "Personal Information",
-        "ipa": "/ˈpɝː.sən.əl ˌɪn.fɚˈmeɪ.ʃən/",
-        "note": "Use the picture to introduce personal information. Ask the student what information people usually share when they meet.",
+        "headline": "Who Are You?",
+        "note": "Look, think and talk about first name, last name, age, address, city, phone number and email.",
         "questions": [
-          "What information can you see?",
-          "What is the person’s name?",
-          "What personal information do you know about yourself?",
-          "What questions can you ask someone new?"
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
         ],
-        "goal": "Ask and answer simple questions about name, age, country, city and occupation."
+        "goal": "Start communicating about personal information."
       },
       {
         "type": "vocab",
         "title": "Key Vocabulary",
-        "image": "unit2_personal_info.jpg",
         "items": [
           [
+            "name",
+            "",
+            ""
+          ],
+          [
             "first name",
-            "/ˈfɝːst ˌneɪm/",
-            "nombre"
+            "",
+            ""
           ],
           [
             "last name",
-            "/ˈlæst ˌneɪm/",
-            "apellido"
+            "",
+            ""
           ],
           [
             "age",
-            "/eɪdʒ/",
-            "edad"
-          ],
-          [
-            "country",
-            "/ˈkʌn.tri/",
-            "país"
-          ],
-          [
-            "city",
-            "/ˈsɪt.i/",
-            "ciudad"
+            "",
+            ""
           ],
           [
             "address",
-            "/əˈdres/",
-            "dirección"
+            "",
+            ""
+          ],
+          [
+            "street",
+            "",
+            ""
+          ],
+          [
+            "city",
+            "",
+            ""
+          ],
+          [
+            "phone",
+            "",
+            ""
           ],
           [
             "phone number",
-            "/ˈfoʊn ˌnʌm.bɚ/",
-            "número de teléfono"
+            "",
+            ""
           ],
           [
-            "job",
-            "/dʒɑːb/",
-            "trabajo / ocupación"
+            "email",
+            "",
+            ""
+          ],
+          [
+            "number",
+            "",
+            ""
+          ],
+          [
+            "old",
+            "",
+            ""
+          ],
+          [
+            "live",
+            "",
+            ""
+          ],
+          [
+            "information",
+            "",
+            ""
+          ],
+          [
+            "personal",
+            "",
+            ""
           ]
         ]
       },
       {
         "type": "sentences",
         "title": "Key Sentences",
-        "image": "unit2_personal_info.jpg",
         "items": [
           [
             "What’s your first name?",
-            "¿Cuál es tu nombre?"
+            ""
           ],
           [
-            "My first name is Emma.",
-            "Mi nombre es Emma."
+            "My first name is Daniel.",
+            ""
+          ],
+          [
+            "What’s your last name?",
+            ""
           ],
           [
             "How old are you?",
-            "¿Cuántos años tienes?"
+            ""
           ],
           [
-            "I’m 20 years old.",
-            "Tengo 20 años."
+            "I’m 25 years old.",
+            ""
           ],
           [
-            "Where are you from?",
-            "¿De dónde eres?"
+            "Where do you live?",
+            ""
           ],
           [
-            "I’m from Peru.",
-            "Soy de Perú."
+            "I live in Lima.",
+            ""
           ],
           [
-            "What city do you live in?",
-            "¿En qué ciudad vives?"
+            "What’s your phone number?",
+            ""
           ],
           [
-            "What do you do?",
-            "¿A qué te dedicas?"
+            "What’s your email address?",
+            ""
           ]
         ]
       },
       {
         "type": "dialogue",
         "title": "Mini Dialogue",
-        "image": "unit2_personal_info.jpg",
         "lines": [
           [
             "A",
-            "Hi! What’s your name?"
+            "What’s your first name?"
           ],
           [
             "B",
-            "My name is Emma."
+            "My first name is Laura."
           ],
           [
             "A",
@@ -316,8 +381,209 @@
           ],
           [
             "B",
-            "I’m twenty years old."
+            "I’m 22 years old."
           ],
+          [
+            "A",
+            "Where do you live?"
+          ],
+          [
+            "B",
+            "I live in Lima."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Verb to be: I/you/he/she",
+          "Affirmative, negative and questions",
+          "Short answers",
+          "Possessive adjectives: my/your/his/her",
+          "Wh-questions: What / How old / Where",
+          "Present Simple with live"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Answer name, age and city questions.",
+          "Interview a partner.",
+          "Give a personal profile.",
+          "Challenge: 30–45 second introduction."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "A Personal Profile",
+        "audio": "Hi, I’m Olivia Parker. I’m twenty-four years old and I live in Lima. My phone number is 555-2034.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: name.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for personal information.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "3": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "Around the World",
+        "note": "Look, think and talk about countries, nationalities and languages.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about countries, nationalities & languages."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "country",
+            "",
+            ""
+          ],
+          [
+            "nationality",
+            "",
+            ""
+          ],
+          [
+            "language",
+            "",
+            ""
+          ],
+          [
+            "from",
+            "",
+            ""
+          ],
+          [
+            "live",
+            "",
+            ""
+          ],
+          [
+            "speak",
+            "",
+            ""
+          ],
+          [
+            "English",
+            "",
+            ""
+          ],
+          [
+            "Spanish",
+            "",
+            ""
+          ],
+          [
+            "French",
+            "",
+            ""
+          ],
+          [
+            "German",
+            "",
+            ""
+          ],
+          [
+            "Chinese",
+            "",
+            ""
+          ],
+          [
+            "American",
+            "",
+            ""
+          ],
+          [
+            "British",
+            "",
+            ""
+          ],
+          [
+            "Peruvian",
+            "",
+            ""
+          ],
+          [
+            "foreign",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "Where are you from?",
+            ""
+          ],
+          [
+            "I’m from Peru.",
+            ""
+          ],
+          [
+            "What nationality are you?",
+            ""
+          ],
+          [
+            "I’m Peruvian.",
+            ""
+          ],
+          [
+            "What language do you speak?",
+            ""
+          ],
+          [
+            "I speak Spanish.",
+            ""
+          ],
+          [
+            "Do you speak English?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
           [
             "A",
             "Where are you from?"
@@ -328,64 +594,2972 @@
           ],
           [
             "A",
-            "What do you do?"
+            "Do you speak English?"
           ],
           [
             "B",
-            "I’m a student."
+            "Yes, I do. I speak Spanish and English."
           ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Subject pronouns",
+          "Verb be consolidation",
+          "Country vs nationality",
+          "Present Simple: speak/live",
+          "Third-person -s",
+          "Questions with do/does"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Say country, nationality and language.",
+          "Answer personal questions.",
+          "Meet someone from another country.",
+          "Challenge: introduce yourself and ask two questions."
         ]
       },
       {
         "type": "listening",
         "title": "Listening",
-        "image": "unit2_personal_info.jpg",
-        "audio": "Hi. My name is Daniel. I am twenty five years old. I am from Peru and I live in Lima. I am a teacher.",
-        "question": "Where does Daniel live?",
-        "options": [
-          "Cusco",
-          "Lima",
-          "Arequipa"
-        ],
-        "answer": "Lima"
-      },
-      {
-        "type": "speaking",
-        "title": "Speaking Practice",
-        "image": "unit2_personal_info.jpg",
-        "questions": [
-          "What’s your first name?",
-          "What’s your last name?",
-          "How old are you?",
-          "Where are you from?",
-          "What city do you live in?",
-          "What do you do?",
-          "Can you introduce yourself using four sentences?"
+        "headline": "People Around the World",
+        "audio": "I’m Leo. I’m from Peru and I speak Spanish and English. Anna is from Canada. She speaks English and French.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
         ]
       },
       {
-        "type": "quiz",
+        "type": "quick",
         "title": "Quick Practice",
-        "image": "unit2_personal_info.jpg",
-        "question": "A: Where are you from?\nB: __________",
-        "options": [
-          "I’m from Peru.",
-          "I’m twenty years old.",
-          "My name is Ana."
-        ],
-        "answer": "I’m from Peru."
+        "items": [
+          "Vocabulary check: country.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
       },
       {
         "type": "review",
         "title": "Lesson Review",
-        "image": "unit2_personal_info.jpg",
         "items": [
-          "I can say my first and last name.",
-          "I can say my age.",
-          "I can say where I am from.",
-          "I can say where I live.",
-          "I can say my occupation.",
-          "I can ask another person for basic personal information."
+          "I can use key vocabulary for countries, nationalities & languages.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "4": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "Meet the Family",
+        "note": "Look, think and talk about family members and relationships.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about family & people."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "family",
+            "",
+            ""
+          ],
+          [
+            "mother",
+            "",
+            ""
+          ],
+          [
+            "father",
+            "",
+            ""
+          ],
+          [
+            "parents",
+            "",
+            ""
+          ],
+          [
+            "sister",
+            "",
+            ""
+          ],
+          [
+            "brother",
+            "",
+            ""
+          ],
+          [
+            "daughter",
+            "",
+            ""
+          ],
+          [
+            "son",
+            "",
+            ""
+          ],
+          [
+            "grandmother",
+            "",
+            ""
+          ],
+          [
+            "grandfather",
+            "",
+            ""
+          ],
+          [
+            "grandparents",
+            "",
+            ""
+          ],
+          [
+            "husband",
+            "",
+            ""
+          ],
+          [
+            "wife",
+            "",
+            ""
+          ],
+          [
+            "child",
+            "",
+            ""
+          ],
+          [
+            "children",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "This is my family.",
+            ""
+          ],
+          [
+            "Who is this?",
+            ""
+          ],
+          [
+            "She’s my sister.",
+            ""
+          ],
+          [
+            "He’s my brother.",
+            ""
+          ],
+          [
+            "Do you have any brothers or sisters?",
+            ""
+          ],
+          [
+            "I have two brothers.",
+            ""
+          ],
+          [
+            "Her name is Maria.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "Is this your family?"
+          ],
+          [
+            "B",
+            "Yes, it is."
+          ],
+          [
+            "A",
+            "Who is this?"
+          ],
+          [
+            "B",
+            "She’s my mother."
+          ],
+          [
+            "A",
+            "Do you have brothers or sisters?"
+          ],
+          [
+            "B",
+            "Yes. I have one brother."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Possessive adjectives",
+          "Possessive ’s",
+          "Have/has",
+          "don’t have / doesn’t have",
+          "Do/Does + have",
+          "This/that/these/those",
+          "Regular plurals"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Identify family members.",
+          "Answer about siblings.",
+          "Describe a family picture.",
+          "Challenge: talk about three family members."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Meet My Family",
+        "audio": "This is my family. This is my mother Susan, my father Tom, and my brother David. I also have one sister.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: family.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for family & people.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "5": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "Birthday Challenge",
+        "note": "Look, think and talk about numbers, dates and birthdays.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about numbers, dates & birthdays."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "number",
+            "",
+            ""
+          ],
+          [
+            "date",
+            "",
+            ""
+          ],
+          [
+            "day",
+            "",
+            ""
+          ],
+          [
+            "week",
+            "",
+            ""
+          ],
+          [
+            "month",
+            "",
+            ""
+          ],
+          [
+            "year",
+            "",
+            ""
+          ],
+          [
+            "birthday",
+            "",
+            ""
+          ],
+          [
+            "today",
+            "",
+            ""
+          ],
+          [
+            "tomorrow",
+            "",
+            ""
+          ],
+          [
+            "Monday",
+            "",
+            ""
+          ],
+          [
+            "Sunday",
+            "",
+            ""
+          ],
+          [
+            "January",
+            "",
+            ""
+          ],
+          [
+            "December",
+            "",
+            ""
+          ],
+          [
+            "first",
+            "",
+            ""
+          ],
+          [
+            "second",
+            "",
+            ""
+          ],
+          [
+            "third",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "What’s the date today?",
+            ""
+          ],
+          [
+            "It’s May 10th.",
+            ""
+          ],
+          [
+            "What day is it today?",
+            ""
+          ],
+          [
+            "When is your birthday?",
+            ""
+          ],
+          [
+            "My birthday is on June 15th.",
+            ""
+          ],
+          [
+            "How old are you?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "When is your birthday?"
+          ],
+          [
+            "B",
+            "My birthday is on August 12th."
+          ],
+          [
+            "A",
+            "How old are you?"
+          ],
+          [
+            "B",
+            "I’m nineteen."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Cardinal and ordinal numbers",
+          "Dates",
+          "Prepositions at/on/in",
+          "When / What day / What date",
+          "be for age"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Say numbers and dates.",
+          "Answer about your birthday.",
+          "Ask a partner.",
+          "Challenge: say a complete date."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Birthday Calendar",
+        "audio": "My birthday is on March third. Ben’s birthday is on July twenty-first. Sarah is eighteen years old.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: number.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for numbers, dates & birthdays.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "6": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "A Day in Pictures",
+        "note": "Look, think and talk about daily activities and routines.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about daily routine."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "wake up",
+            "",
+            ""
+          ],
+          [
+            "get up",
+            "",
+            ""
+          ],
+          [
+            "shower",
+            "",
+            ""
+          ],
+          [
+            "get dressed",
+            "",
+            ""
+          ],
+          [
+            "have breakfast",
+            "",
+            ""
+          ],
+          [
+            "go to work",
+            "",
+            ""
+          ],
+          [
+            "go to school",
+            "",
+            ""
+          ],
+          [
+            "study",
+            "",
+            ""
+          ],
+          [
+            "work",
+            "",
+            ""
+          ],
+          [
+            "have lunch",
+            "",
+            ""
+          ],
+          [
+            "go home",
+            "",
+            ""
+          ],
+          [
+            "have dinner",
+            "",
+            ""
+          ],
+          [
+            "watch TV",
+            "",
+            ""
+          ],
+          [
+            "go to bed",
+            "",
+            ""
+          ],
+          [
+            "sleep",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "I wake up at seven.",
+            ""
+          ],
+          [
+            "I have breakfast at home.",
+            ""
+          ],
+          [
+            "I go to work at eight.",
+            ""
+          ],
+          [
+            "I study in the morning.",
+            ""
+          ],
+          [
+            "I have lunch at noon.",
+            ""
+          ],
+          [
+            "I go home in the afternoon.",
+            ""
+          ],
+          [
+            "I go to bed at ten.",
+            ""
+          ],
+          [
+            "What time do you get up?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What time do you get up?"
+          ],
+          [
+            "B",
+            "I get up at seven."
+          ],
+          [
+            "A",
+            "What do you do at night?"
+          ],
+          [
+            "B",
+            "I watch TV and go to bed at ten."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Present Simple affirmative",
+          "Third-person -s/-es/-ies",
+          "don’t/doesn’t",
+          "Do/Does questions",
+          "Adverbs of frequency",
+          "first/then/after that"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Describe routine pictures.",
+          "Talk about your routine.",
+          "Compare routines.",
+          "Challenge: describe 6–8 actions."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "My Typical Day",
+        "audio": "I usually get up at six thirty. I have breakfast at seven, start work at eight, have lunch at noon and go to bed at ten.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: wake up.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for daily routine.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "7": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What Time Is It?",
+        "note": "Look, think and talk about time and schedules.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about time & schedules."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "time",
+            "",
+            ""
+          ],
+          [
+            "clock",
+            "",
+            ""
+          ],
+          [
+            "hour",
+            "",
+            ""
+          ],
+          [
+            "minute",
+            "",
+            ""
+          ],
+          [
+            "morning",
+            "",
+            ""
+          ],
+          [
+            "afternoon",
+            "",
+            ""
+          ],
+          [
+            "evening",
+            "",
+            ""
+          ],
+          [
+            "night",
+            "",
+            ""
+          ],
+          [
+            "early",
+            "",
+            ""
+          ],
+          [
+            "late",
+            "",
+            ""
+          ],
+          [
+            "o'clock",
+            "",
+            ""
+          ],
+          [
+            "half past",
+            "",
+            ""
+          ],
+          [
+            "quarter past",
+            "",
+            ""
+          ],
+          [
+            "quarter to",
+            "",
+            ""
+          ],
+          [
+            "schedule",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "What time is it?",
+            ""
+          ],
+          [
+            "It’s three o’clock.",
+            ""
+          ],
+          [
+            "It’s half past six.",
+            ""
+          ],
+          [
+            "It’s quarter past eight.",
+            ""
+          ],
+          [
+            "What time do you start work?",
+            ""
+          ],
+          [
+            "I start work at nine.",
+            ""
+          ],
+          [
+            "What time is your class?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What time is it?"
+          ],
+          [
+            "B",
+            "It’s quarter past eight."
+          ],
+          [
+            "A",
+            "What time is our class?"
+          ],
+          [
+            "B",
+            "It’s at half past eight."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Present Simple questions",
+          "Do/Does + subject + base verb",
+          "Wh + do/does",
+          "Short answers",
+          "at + time",
+          "in the morning / at night",
+          "Telling the time"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Read clocks.",
+          "Talk about your schedule.",
+          "Ask for missing times.",
+          "Challenge: explain a day’s schedule."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Today’s Schedule",
+        "audio": "My English class starts at nine. I have lunch at twelve thirty and my afternoon class starts at quarter past two.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: time.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for time & schedules.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "8": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What’s in the House?",
+        "note": "Look, think and talk about rooms, furniture and object locations.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about home & furniture."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "house",
+            "",
+            ""
+          ],
+          [
+            "home",
+            "",
+            ""
+          ],
+          [
+            "apartment",
+            "",
+            ""
+          ],
+          [
+            "bedroom",
+            "",
+            ""
+          ],
+          [
+            "bathroom",
+            "",
+            ""
+          ],
+          [
+            "kitchen",
+            "",
+            ""
+          ],
+          [
+            "living room",
+            "",
+            ""
+          ],
+          [
+            "dining room",
+            "",
+            ""
+          ],
+          [
+            "door",
+            "",
+            ""
+          ],
+          [
+            "window",
+            "",
+            ""
+          ],
+          [
+            "bed",
+            "",
+            ""
+          ],
+          [
+            "table",
+            "",
+            ""
+          ],
+          [
+            "chair",
+            "",
+            ""
+          ],
+          [
+            "sofa",
+            "",
+            ""
+          ],
+          [
+            "television",
+            "",
+            ""
+          ],
+          [
+            "refrigerator",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "I live in an apartment.",
+            ""
+          ],
+          [
+            "There is a bed in the bedroom.",
+            ""
+          ],
+          [
+            "There are two chairs in the kitchen.",
+            ""
+          ],
+          [
+            "Where is the bathroom?",
+            ""
+          ],
+          [
+            "It’s next to the bedroom.",
+            ""
+          ],
+          [
+            "The book is on the table.",
+            ""
+          ],
+          [
+            "The shoes are under the bed.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "Do you live in a house or apartment?"
+          ],
+          [
+            "B",
+            "I live in an apartment."
+          ],
+          [
+            "A",
+            "How many bedrooms are there?"
+          ],
+          [
+            "B",
+            "There are two."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "There is / There are",
+          "Negative forms",
+          "Is there? / Are there?",
+          "Short answers",
+          "a/an",
+          "Prepositions of place"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Name rooms/furniture.",
+          "Locate objects.",
+          "Describe your home.",
+          "Challenge: describe a room."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "My Apartment",
+        "audio": "I live in an apartment. There are two bedrooms. The sofa is in the living room and the lamp is next to the sofa.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: house.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for home & furniture.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "9": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What Do You Like?",
+        "note": "Look, think and talk about food, drinks, meals and preferences.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about food & drinks."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "food",
+            "",
+            ""
+          ],
+          [
+            "drink",
+            "",
+            ""
+          ],
+          [
+            "water",
+            "",
+            ""
+          ],
+          [
+            "coffee",
+            "",
+            ""
+          ],
+          [
+            "tea",
+            "",
+            ""
+          ],
+          [
+            "milk",
+            "",
+            ""
+          ],
+          [
+            "juice",
+            "",
+            ""
+          ],
+          [
+            "bread",
+            "",
+            ""
+          ],
+          [
+            "rice",
+            "",
+            ""
+          ],
+          [
+            "meat",
+            "",
+            ""
+          ],
+          [
+            "chicken",
+            "",
+            ""
+          ],
+          [
+            "fish",
+            "",
+            ""
+          ],
+          [
+            "egg",
+            "",
+            ""
+          ],
+          [
+            "fruit",
+            "",
+            ""
+          ],
+          [
+            "vegetables",
+            "",
+            ""
+          ],
+          [
+            "breakfast",
+            "",
+            ""
+          ],
+          [
+            "lunch",
+            "",
+            ""
+          ],
+          [
+            "dinner",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "I like coffee.",
+            ""
+          ],
+          [
+            "I don’t like tea.",
+            ""
+          ],
+          [
+            "Do you like chicken?",
+            ""
+          ],
+          [
+            "What’s your favorite food?",
+            ""
+          ],
+          [
+            "I have eggs for breakfast.",
+            ""
+          ],
+          [
+            "I drink water every day.",
+            ""
+          ],
+          [
+            "I’m hungry.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What do you have for breakfast?"
+          ],
+          [
+            "B",
+            "I have eggs and bread."
+          ],
+          [
+            "A",
+            "Do you drink coffee?"
+          ],
+          [
+            "B",
+            "No, I drink tea."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Countable vs uncountable nouns",
+          "Singular/plural",
+          "a/an",
+          "some/any",
+          "like/love/don’t like",
+          "How much / How many"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Say likes/dislikes.",
+          "Talk about meals.",
+          "Survey a partner.",
+          "Challenge: describe a day of food."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "What I Eat in a Day",
+        "audio": "For breakfast I have eggs and tea. For lunch I eat chicken and rice. For dinner I usually have fish and vegetables.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: food.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for food & drinks.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "10": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What Would You Order?",
+        "note": "Look, think and talk about restaurant language and ordering.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about at a restaurant."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "restaurant",
+            "",
+            ""
+          ],
+          [
+            "menu",
+            "",
+            ""
+          ],
+          [
+            "waiter",
+            "",
+            ""
+          ],
+          [
+            "waitress",
+            "",
+            ""
+          ],
+          [
+            "table",
+            "",
+            ""
+          ],
+          [
+            "order",
+            "",
+            ""
+          ],
+          [
+            "meal",
+            "",
+            ""
+          ],
+          [
+            "starter",
+            "",
+            ""
+          ],
+          [
+            "main course",
+            "",
+            ""
+          ],
+          [
+            "dessert",
+            "",
+            ""
+          ],
+          [
+            "bill",
+            "",
+            ""
+          ],
+          [
+            "hungry",
+            "",
+            ""
+          ],
+          [
+            "thirsty",
+            "",
+            ""
+          ],
+          [
+            "delicious",
+            "",
+            ""
+          ],
+          [
+            "glass",
+            "",
+            ""
+          ],
+          [
+            "bottle",
+            "",
+            ""
+          ],
+          [
+            "plate",
+            "",
+            ""
+          ],
+          [
+            "cup",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "Can I see the menu, please?",
+            ""
+          ],
+          [
+            "I’d like the chicken, please.",
+            ""
+          ],
+          [
+            "Can I have some water, please?",
+            ""
+          ],
+          [
+            "What would you like?",
+            ""
+          ],
+          [
+            "Anything else?",
+            ""
+          ],
+          [
+            "No, thank you.",
+            ""
+          ],
+          [
+            "Can I have the bill, please?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "Waiter",
+            "Are you ready to order?"
+          ],
+          [
+            "Customer",
+            "Yes. I’d like the chicken, please."
+          ],
+          [
+            "Waiter",
+            "Anything to drink?"
+          ],
+          [
+            "Customer",
+            "Some water, please."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Polite requests",
+          "I’d like + noun",
+          "Would you like…?",
+          "Can I have…?",
+          "some/any",
+          "Countable/uncountable in orders"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Build polite orders.",
+          "Choose from a menu.",
+          "Waiter/customer role-play.",
+          "Challenge: order through to the bill."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Ordering Dinner",
+        "audio": "Are you ready to order? Yes, I’d like the chicken and some water, please. Anything else? No, thank you.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: restaurant.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for at a restaurant.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "11": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "How Much Is It?",
+        "note": "Look, think and talk about shopping, prices, sizes and payment.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about shopping & prices."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "shop",
+            "",
+            ""
+          ],
+          [
+            "store",
+            "",
+            ""
+          ],
+          [
+            "supermarket",
+            "",
+            ""
+          ],
+          [
+            "buy",
+            "",
+            ""
+          ],
+          [
+            "sell",
+            "",
+            ""
+          ],
+          [
+            "price",
+            "",
+            ""
+          ],
+          [
+            "money",
+            "",
+            ""
+          ],
+          [
+            "cash",
+            "",
+            ""
+          ],
+          [
+            "card",
+            "",
+            ""
+          ],
+          [
+            "cheap",
+            "",
+            ""
+          ],
+          [
+            "expensive",
+            "",
+            ""
+          ],
+          [
+            "cost",
+            "",
+            ""
+          ],
+          [
+            "change",
+            "",
+            ""
+          ],
+          [
+            "size",
+            "",
+            ""
+          ],
+          [
+            "small",
+            "",
+            ""
+          ],
+          [
+            "medium",
+            "",
+            ""
+          ],
+          [
+            "large",
+            "",
+            ""
+          ],
+          [
+            "customer",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "How much is this?",
+            ""
+          ],
+          [
+            "It’s ten dollars.",
+            ""
+          ],
+          [
+            "How much are these?",
+            ""
+          ],
+          [
+            "I’d like this one, please.",
+            ""
+          ],
+          [
+            "Do you have a larger size?",
+            ""
+          ],
+          [
+            "That’s too expensive.",
+            ""
+          ],
+          [
+            "Can I pay by card?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "Customer",
+            "How much is this shirt?"
+          ],
+          [
+            "Assistant",
+            "It’s twenty dollars."
+          ],
+          [
+            "Customer",
+            "Do you have a larger size?"
+          ],
+          [
+            "Assistant",
+            "Yes. Here you are."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "this/that/these/those",
+          "How much is/are?",
+          "be + price",
+          "Can for requests",
+          "Do you have…?",
+          "Adjective + noun",
+          "one/ones"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Ask prices.",
+          "Choose size/color.",
+          "Shop role-play.",
+          "Challenge: complete a purchase."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Buying a Shirt",
+        "audio": "How much is this shirt? It’s twenty dollars. Do you have a large? Yes. Great, I’ll take it. I’ll pay by card.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: shop.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for shopping & prices.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "12": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What Are They Wearing?",
+        "note": "Look, think and talk about clothes, colors and appearance.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about clothes & appearance."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "clothes",
+            "",
+            ""
+          ],
+          [
+            "shirt",
+            "",
+            ""
+          ],
+          [
+            "T-shirt",
+            "",
+            ""
+          ],
+          [
+            "pants",
+            "",
+            ""
+          ],
+          [
+            "jeans",
+            "",
+            ""
+          ],
+          [
+            "dress",
+            "",
+            ""
+          ],
+          [
+            "skirt",
+            "",
+            ""
+          ],
+          [
+            "jacket",
+            "",
+            ""
+          ],
+          [
+            "shoes",
+            "",
+            ""
+          ],
+          [
+            "hat",
+            "",
+            ""
+          ],
+          [
+            "wear",
+            "",
+            ""
+          ],
+          [
+            "tall",
+            "",
+            ""
+          ],
+          [
+            "short",
+            "",
+            ""
+          ],
+          [
+            "young",
+            "",
+            ""
+          ],
+          [
+            "old",
+            "",
+            ""
+          ],
+          [
+            "hair",
+            "",
+            ""
+          ],
+          [
+            "eyes",
+            "",
+            ""
+          ],
+          [
+            "black",
+            "",
+            ""
+          ],
+          [
+            "white",
+            "",
+            ""
+          ],
+          [
+            "red",
+            "",
+            ""
+          ],
+          [
+            "blue",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "What are you wearing?",
+            ""
+          ],
+          [
+            "I’m wearing a blue shirt.",
+            ""
+          ],
+          [
+            "She’s wearing a red dress.",
+            ""
+          ],
+          [
+            "What does she look like?",
+            ""
+          ],
+          [
+            "She’s tall.",
+            ""
+          ],
+          [
+            "She has long hair.",
+            ""
+          ],
+          [
+            "He has brown eyes.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "Who is that woman?"
+          ],
+          [
+            "B",
+            "That’s my sister."
+          ],
+          [
+            "A",
+            "What is she wearing?"
+          ],
+          [
+            "B",
+            "She’s wearing a red dress."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Present Continuous",
+          "Negative and questions",
+          "Basic -ing rules",
+          "Have/has for appearance",
+          "be + adjective",
+          "Simple adjective order"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Describe clothes.",
+          "Describe appearance.",
+          "Guess who.",
+          "Challenge: describe a person."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Who Is It?",
+        "audio": "Maria is tall. She has long brown hair and brown eyes. She’s wearing a red dress and black shoes.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: clothes.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for clothes & appearance.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "13": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What Do You Like Doing?",
+        "note": "Look, think and talk about hobbies, free time and abilities.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about free time, hobbies & likes."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "free time",
+            "",
+            ""
+          ],
+          [
+            "hobby",
+            "",
+            ""
+          ],
+          [
+            "music",
+            "",
+            ""
+          ],
+          [
+            "movie",
+            "",
+            ""
+          ],
+          [
+            "book",
+            "",
+            ""
+          ],
+          [
+            "sport",
+            "",
+            ""
+          ],
+          [
+            "football",
+            "",
+            ""
+          ],
+          [
+            "game",
+            "",
+            ""
+          ],
+          [
+            "read",
+            "",
+            ""
+          ],
+          [
+            "watch",
+            "",
+            ""
+          ],
+          [
+            "listen",
+            "",
+            ""
+          ],
+          [
+            "play",
+            "",
+            ""
+          ],
+          [
+            "swim",
+            "",
+            ""
+          ],
+          [
+            "dance",
+            "",
+            ""
+          ],
+          [
+            "cook",
+            "",
+            ""
+          ],
+          [
+            "travel",
+            "",
+            ""
+          ],
+          [
+            "like",
+            "",
+            ""
+          ],
+          [
+            "love",
+            "",
+            ""
+          ],
+          [
+            "favorite",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "What do you do in your free time?",
+            ""
+          ],
+          [
+            "I read books.",
+            ""
+          ],
+          [
+            "I listen to music.",
+            ""
+          ],
+          [
+            "I play football.",
+            ""
+          ],
+          [
+            "I like movies.",
+            ""
+          ],
+          [
+            "Do you like swimming?",
+            ""
+          ],
+          [
+            "What’s your favorite hobby?",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What do you do in your free time?"
+          ],
+          [
+            "B",
+            "I listen to music and read."
+          ],
+          [
+            "A",
+            "Do you like sports?"
+          ],
+          [
+            "B",
+            "Yes, I love football."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "Present Simple for hobbies",
+          "like/love + noun",
+          "like/love + -ing",
+          "Do…? questions",
+          "Can/can’t",
+          "Short answers with can"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Talk about hobbies.",
+          "Ask a partner.",
+          "Find something in common.",
+          "Challenge: 45–60 seconds about hobbies."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "My Weekend",
+        "audio": "On weekends I listen to music and play football. My friend Mia likes reading and swimming.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: free time.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for free time, hobbies & likes.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "14": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "Where Are We?",
+        "note": "Look, think and talk about places in town and directions.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about places in town & directions."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "city",
+            "",
+            ""
+          ],
+          [
+            "town",
+            "",
+            ""
+          ],
+          [
+            "street",
+            "",
+            ""
+          ],
+          [
+            "bank",
+            "",
+            ""
+          ],
+          [
+            "supermarket",
+            "",
+            ""
+          ],
+          [
+            "hospital",
+            "",
+            ""
+          ],
+          [
+            "pharmacy",
+            "",
+            ""
+          ],
+          [
+            "restaurant",
+            "",
+            ""
+          ],
+          [
+            "school",
+            "",
+            ""
+          ],
+          [
+            "station",
+            "",
+            ""
+          ],
+          [
+            "park",
+            "",
+            ""
+          ],
+          [
+            "hotel",
+            "",
+            ""
+          ],
+          [
+            "left",
+            "",
+            ""
+          ],
+          [
+            "right",
+            "",
+            ""
+          ],
+          [
+            "straight",
+            "",
+            ""
+          ],
+          [
+            "near",
+            "",
+            ""
+          ],
+          [
+            "far",
+            "",
+            ""
+          ],
+          [
+            "next to",
+            "",
+            ""
+          ],
+          [
+            "opposite",
+            "",
+            ""
+          ],
+          [
+            "between",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "Where is the bank?",
+            ""
+          ],
+          [
+            "It’s next to the supermarket.",
+            ""
+          ],
+          [
+            "Is there a pharmacy near here?",
+            ""
+          ],
+          [
+            "How do I get to the station?",
+            ""
+          ],
+          [
+            "Go straight.",
+            ""
+          ],
+          [
+            "Turn left.",
+            ""
+          ],
+          [
+            "Turn right.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "Is there a pharmacy near here?"
+          ],
+          [
+            "B",
+            "Yes. Go straight and turn left."
+          ],
+          [
+            "A",
+            "Is it far?"
+          ],
+          [
+            "B",
+            "No. It’s next to the bank."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "There is/are review",
+          "Is there? / Are there?",
+          "some/any",
+          "Imperatives",
+          "Negative imperatives",
+          "Prepositions of place",
+          "Where is/are?"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Identify places.",
+          "Ask locations.",
+          "Tourist/local role-play.",
+          "Challenge: give directions A to B."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "How Do I Get There?",
+        "audio": "Go straight, turn left at the bank, and the pharmacy is next to the supermarket.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: city.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for places in town & directions.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "15": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "What’s the Weather Like?",
+        "note": "Look, think and talk about weather and seasons.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about weather & seasons."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "weather",
+            "",
+            ""
+          ],
+          [
+            "sun",
+            "",
+            ""
+          ],
+          [
+            "rain",
+            "",
+            ""
+          ],
+          [
+            "snow",
+            "",
+            ""
+          ],
+          [
+            "wind",
+            "",
+            ""
+          ],
+          [
+            "cloud",
+            "",
+            ""
+          ],
+          [
+            "sunny",
+            "",
+            ""
+          ],
+          [
+            "rainy",
+            "",
+            ""
+          ],
+          [
+            "snowy",
+            "",
+            ""
+          ],
+          [
+            "windy",
+            "",
+            ""
+          ],
+          [
+            "cloudy",
+            "",
+            ""
+          ],
+          [
+            "hot",
+            "",
+            ""
+          ],
+          [
+            "warm",
+            "",
+            ""
+          ],
+          [
+            "cool",
+            "",
+            ""
+          ],
+          [
+            "cold",
+            "",
+            ""
+          ],
+          [
+            "spring",
+            "",
+            ""
+          ],
+          [
+            "summer",
+            "",
+            ""
+          ],
+          [
+            "autumn",
+            "",
+            ""
+          ],
+          [
+            "winter",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "What’s the weather like today?",
+            ""
+          ],
+          [
+            "It’s sunny.",
+            ""
+          ],
+          [
+            "It’s raining.",
+            ""
+          ],
+          [
+            "It’s cold today.",
+            ""
+          ],
+          [
+            "What’s your favorite season?",
+            ""
+          ],
+          [
+            "My favorite season is summer.",
+            ""
+          ],
+          [
+            "I like sunny days.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What’s the weather like today?"
+          ],
+          [
+            "B",
+            "It’s cold and rainy."
+          ],
+          [
+            "A",
+            "What’s your favorite season?"
+          ],
+          [
+            "B",
+            "Summer, because I like hot weather."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "It + be for weather",
+          "Present Continuous for current weather",
+          "It’s rainy vs It’s raining",
+          "Present Simple for usual weather",
+          "because",
+          "and/but"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Describe weather.",
+          "Answer about favorite season.",
+          "Compare weather.",
+          "Challenge: mini weather report."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "Today’s Weather",
+        "audio": "Today it’s sunny in Lima, rainy in London and cold and snowy in Toronto.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: weather.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for weather & seasons.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
+        ]
+      }
+    ],
+    "16": [
+      {
+        "type": "warmup",
+        "title": "Warm-up",
+        "headline": "How Do You Feel?",
+        "note": "Look, think and talk about health, symptoms and basic needs.",
+        "questions": [
+          "What can you see?",
+          "What words do you already know?",
+          "What can you say about this topic?"
+        ],
+        "goal": "Start communicating about health & basic needs."
+      },
+      {
+        "type": "vocab",
+        "title": "Key Vocabulary",
+        "items": [
+          [
+            "health",
+            "",
+            ""
+          ],
+          [
+            "feel",
+            "",
+            ""
+          ],
+          [
+            "sick",
+            "",
+            ""
+          ],
+          [
+            "well",
+            "",
+            ""
+          ],
+          [
+            "tired",
+            "",
+            ""
+          ],
+          [
+            "hungry",
+            "",
+            ""
+          ],
+          [
+            "thirsty",
+            "",
+            ""
+          ],
+          [
+            "hot",
+            "",
+            ""
+          ],
+          [
+            "cold",
+            "",
+            ""
+          ],
+          [
+            "headache",
+            "",
+            ""
+          ],
+          [
+            "stomachache",
+            "",
+            ""
+          ],
+          [
+            "toothache",
+            "",
+            ""
+          ],
+          [
+            "fever",
+            "",
+            ""
+          ],
+          [
+            "doctor",
+            "",
+            ""
+          ],
+          [
+            "medicine",
+            "",
+            ""
+          ],
+          [
+            "pharmacy",
+            "",
+            ""
+          ],
+          [
+            "rest",
+            "",
+            ""
+          ],
+          [
+            "hurt",
+            "",
+            ""
+          ],
+          [
+            "pain",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "sentences",
+        "title": "Key Sentences",
+        "items": [
+          [
+            "How do you feel?",
+            ""
+          ],
+          [
+            "I feel sick.",
+            ""
+          ],
+          [
+            "I’m tired.",
+            ""
+          ],
+          [
+            "What’s wrong?",
+            ""
+          ],
+          [
+            "I have a headache.",
+            ""
+          ],
+          [
+            "My tooth hurts.",
+            ""
+          ],
+          [
+            "I need a doctor.",
+            ""
+          ],
+          [
+            "You should rest.",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "dialogue",
+        "title": "Mini Dialogue",
+        "lines": [
+          [
+            "A",
+            "What’s wrong?"
+          ],
+          [
+            "B",
+            "I have a headache and I’m tired."
+          ],
+          [
+            "A",
+            "You should rest."
+          ],
+          [
+            "B",
+            "Yes. I need some medicine too."
+          ]
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Grammar Focus",
+        "items": [
+          "be + adjective",
+          "have/has + symptoms",
+          "Do you have…?",
+          "need + noun",
+          "should/shouldn’t",
+          "What’s wrong? / How do you feel?"
+        ]
+      },
+      {
+        "type": "speaking",
+        "title": "Speaking Practice",
+        "questions": [
+          "Identify symptoms.",
+          "Say how you feel.",
+          "Doctor/patient role-play.",
+          "Challenge: symptoms plus two pieces of advice."
+        ]
+      },
+      {
+        "type": "listening",
+        "title": "Listening",
+        "headline": "At the Doctor’s",
+        "audio": "I have a headache and a fever. You should rest, drink water and take your medicine.",
+        "tasks": [
+          "First listening: understand the main idea.",
+          "Second listening: identify specific information.",
+          "Answer detail questions.",
+          "Listen again and notice key language.",
+          "Post-listening: retell or respond orally."
+        ]
+      },
+      {
+        "type": "quick",
+        "title": "Quick Practice",
+        "items": [
+          "Vocabulary check: health.",
+          "Complete a key sentence.",
+          "Choose the correct grammar form.",
+          "Build or correct a sentence.",
+          "Personal response / speaking check."
+        ]
+      },
+      {
+        "type": "review",
+        "title": "Lesson Review",
+        "items": [
+          "I can use key vocabulary for health & basic needs.",
+          "I can understand and use the unit’s key sentences.",
+          "I can use the main grammar in simple communication.",
+          "I can understand the unit listening.",
+          "I can speak about the unit topic.",
+          "Final speaking challenge: use the unit language without reading the model dialogue."
         ]
       }
     ]
