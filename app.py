@@ -439,8 +439,13 @@ def play(text,key,label="🔊 Listen"):
 def optional_translation(slide, text, key):
     tr=(slide.get("translations") or {}).get(text)
     if tr:
-        with st.expander("🇪🇸 Ver traducción", expanded=False):
-            st.markdown(f"**{tr}**")
+        show_key=f"show_{key}"
+        if show_key not in st.session_state:
+            st.session_state[show_key]=False
+        if st.button("🇪🇸", key=f"btn_{key}", help="Ver/ocultar traducción"):
+            st.session_state[show_key]=not st.session_state[show_key]
+        if st.session_state[show_key]:
+            st.markdown(f'<div class="translation-box">{tr}</div>', unsafe_allow_html=True)
 
 
 # ============================================================
@@ -620,7 +625,7 @@ s=SLIDES[idx]
 pct=(idx+1)/len(SLIDES)*100
 
 unit_title=UNITS[st.session_state.unit-1]
-st.markdown(f"""<div class="hero"><h1>Clase {st.session_state.unit} · {unit_title}</h1><p>Inglés A1 · Clase integrada · 90 minutos</p>
+st.markdown(f"""<div class="hero"><h1>Clase {st.session_state.unit} · {unit_title}</h1><p>Inglés A1</p>
 <div style="display:flex;justify-content:space-between;color:{C['muted']};margin-top:14px"><span>{s['title']}</span><span>{idx+1}/{len(SLIDES)}</span></div>
 <div class="progress" style="margin-top:8px"><div class="fill" style="width:{pct:.1f}%"></div></div></div>""",unsafe_allow_html=True)
 
