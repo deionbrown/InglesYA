@@ -672,7 +672,20 @@ elif t in ("repeat","pattern","practice","pronunciation"):
 
 elif t=="table":
     if s.get("instruction"): st.markdown(f'<div class="tip">💡 {s["instruction"]}</div>', unsafe_allow_html=True)
-    st.table([dict(zip(s["headers"],r)) for r in s["rows"]])
+    # Tabla HTML que usa los colores activos del modo Light/Dark.
+    headers=s["headers"]
+    rows=s["rows"]
+    table_html = f'<table style="width:100%;border-collapse:collapse;background:{C["card"]};color:{C["text"]};"><thead><tr>'
+    for h in headers:
+        table_html += f'<th style="text-align:left;padding:10px;border:1px solid {C["border"]};background:{C["card"]};color:{C["text"]};">{h}</th>'
+    table_html += '</tr></thead><tbody>'
+    for r in rows:
+        table_html += '<tr>'
+        for cell in r:
+            table_html += f'<td style="padding:10px;border:1px solid {C["border"]};background:{C["card"]};color:{C["text"]};"><b>{cell}</b></td>'
+        table_html += '</tr>'
+    table_html += '</tbody></table>'
+    st.markdown(table_html,unsafe_allow_html=True)
     for i,r in enumerate(s.get("rows",[])):
         if len(r)>=3: play(r[2],f"tbl_{idx}_{i}")
 
