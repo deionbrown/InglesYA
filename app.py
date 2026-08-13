@@ -675,14 +675,14 @@ elif t=="table":
     # Tabla HTML que usa los colores activos del modo Light/Dark.
     headers=s["headers"]
     rows=s["rows"]
-    table_html = f'<table style="width:100%;border-collapse:collapse;background:{C["card"]};color:{C["text"]};"><thead><tr>'
+    table_html = f'<table style="width:100%;border-collapse:collapse;background:{C["surface"]};color:{C["text"]};"><thead><tr>'
     for h in headers:
-        table_html += f'<th style="text-align:left;padding:10px;border:1px solid {C["border"]};background:{C["card"]};color:{C["text"]};">{h}</th>'
+        table_html += f'<th style="text-align:left;padding:10px;border:1px solid {C["border"]};background:{C["surface"]};color:{C["text"]};">{h}</th>'
     table_html += '</tr></thead><tbody>'
     for r in rows:
         table_html += '<tr>'
         for cell in r:
-            table_html += f'<td style="padding:10px;border:1px solid {C["border"]};background:{C["card"]};color:{C["text"]};"><b>{cell}</b></td>'
+            table_html += f'<td style="padding:10px;border:1px solid {C["border"]};background:{C["surface"]};color:{C["text"]};"><b>{cell}</b></td>'
         table_html += '</tr>'
     table_html += '</tbody></table>'
     st.markdown(table_html,unsafe_allow_html=True)
